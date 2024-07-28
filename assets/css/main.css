@@ -866,11 +866,14 @@ section,
   color: var(--accent-color);
 }
 
+.hero span {
+  color: var(--accent-color);
+}
+
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin: 5px 0 30px 0;
   font-size: 20px;
-  font-weight: 400;
 }
 
 .hero .btn-get-started {
@@ -1024,7 +1027,7 @@ section,
   position: absolute;
   inset: -60px 0 0 -60px;
   content: "";
-  background: url("../img/about-bg.png") top left;
+  /* background: url("../img/about-bg.png") top left; */
   background-repeat: no-repeat;
   z-index: 1;
 }
@@ -1032,6 +1035,7 @@ section,
 .about .about-img img {
   position: relative;
   z-index: 2;
+  border-radius: 50%;
 }
 
 @media (max-width: 575px) {
