@@ -1245,14 +1245,14 @@ section,
 }
 
 .onfocus .content {
-  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), color-mix(in srgb, var(--background-color), transparent 75%)), url("../img/onfocus-content-bg.jpg") center center;
+  /* background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), color-mix(in srgb, var(--background-color), transparent 75%)), url("../img/onfocus-content-bg.jpg") center center; */
   background-size: cover;
   padding: 40px;
 }
 
 @media (min-width: 768px) {
   .onfocus .content {
-    padding: 80px;
+    padding: 20px;
   }
 }
 
