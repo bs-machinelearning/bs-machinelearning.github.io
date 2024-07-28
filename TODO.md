@@ -1,1 +1,2 @@
-- Our Team > add correct linkedin link
+- index.html > Our Team > add correct linkedin link
+- index.html > Open Roles > add descriptions (template in the Website Developer)
