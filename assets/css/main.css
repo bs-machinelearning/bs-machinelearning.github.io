@@ -1931,6 +1931,11 @@ section,
   overflow: hidden;
 }
 
+.member-img img {
+  height: 400px;
+  width: 400px;
+}
+
 .team .team-member .social {
   position: absolute;
   left: 0;
@@ -1991,7 +1996,7 @@ section,
 .team .team-member .member-info span {
   display: block;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 250;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
