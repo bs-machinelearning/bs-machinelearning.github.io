@@ -1128,7 +1128,6 @@ section,
 
 .clients .client-logo img:hover {
   filter: none;
-  opacity: 1;
 }
 
 @media (max-width: 640px) {
