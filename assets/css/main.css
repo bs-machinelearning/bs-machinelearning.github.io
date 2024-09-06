@@ -858,7 +858,7 @@ section,
 
 .hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 80px;
   font-weight: 300;
 }
 
@@ -870,10 +870,10 @@ section,
   color: var(--accent-color);
 }
 
-.hero p {
+.subtitle {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin: 5px 0 30px 0;
-  font-size: 20px;
+  margin: 5px 0 0 0;
+  font-size: 30px;
 }
 
 .hero .btn-get-started {
@@ -1023,6 +1023,10 @@ section,
   margin: 60px 0 0 60px;
 }
 
+.about span {
+  color: var(--accent-color);
+}
+
 .about .about-img:before {
   position: absolute;
   inset: -60px 0 0 -60px;
@@ -1048,10 +1052,17 @@ section,
   }
 }
 
-.about h3 {
+.about h2 {
   font-weight: 300;
-  font-size: 32px;
+  font-size: 45px;
   margin-bottom: 20px;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.about .section-title p {
+  font-size: 1.2rem;
+  padding: 1rem 0 1rem 0;
 }
 
 @media (max-width: 768px) {
