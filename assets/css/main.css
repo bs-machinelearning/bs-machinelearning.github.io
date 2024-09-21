@@ -2418,9 +2418,18 @@ section,
 /*--------------------------------------------------------------
 # Blog Posts Section
 --------------------------------------------------------------*/
+.blog-page .page-title a {
+  color: var(--default-color);
+}
+
+.blog-page .page-title a:hover {
+  color: var(--accent-color);
+}
+
+
 .blog-posts article {
   background-color: var(--surface-color);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 25px rgba(102, 0, 204, 0.1);
   padding: 30px;
   height: 100%;
   border-radius: 10px;
@@ -2539,6 +2548,7 @@ section,
 
 .blog-details .content {
   margin-top: 20px;
+  text-align: justify;
 }
 
 .blog-details .content h3 {
