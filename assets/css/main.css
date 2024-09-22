@@ -253,7 +253,7 @@ h6 {
 }
 
 .header .btn-getstarted,
-.header .btn-getstarted:focus {
+.header .btn-getstarted:focus{
   color: var(--contrast-color);
   background: var(--accent-color);
   font-size: 14px;
@@ -2621,6 +2621,7 @@ section,
 
 .blog-details .meta-bottom {
   padding-top: 10px;
+  margin-top: 20px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
@@ -2674,6 +2675,23 @@ section,
   padding-left: 5px;
 }
 
+.blog-details .btn-chatbot,
+.blog-details .btn-chatbot:focus{
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 26px;
+  margin: 0;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.blog-details .btn-chatbot:hover,
+.blog-details .btn-chatbot:focus:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
 /*--------------------------------------------------------------
 # Blog Author Section
 --------------------------------------------------------------*/
