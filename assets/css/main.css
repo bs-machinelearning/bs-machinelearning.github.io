@@ -2541,6 +2541,14 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
+.theses .post-author a{
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.theses .post-author a:hover{
+  color: var(--accent-color);
+}
+
 .theses .post-date {
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
