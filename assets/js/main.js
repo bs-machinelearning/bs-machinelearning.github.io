@@ -37,7 +37,7 @@ function updateTheses(){
 
         // Append the projectHTML to the project list
         document.getElementById('theses-container').innerHTML += thesisHTML;
-        console.log('Thesis list updated from https://bsmachinelearning.github.io/assets/theses.json')
+        console.log('Thesis list updated from https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/theses.json')
       });
     })
     .catch(error => {
