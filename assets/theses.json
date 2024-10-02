@@ -1,5 +1,21 @@
 [
     {
+        "title": "Generative Modeling in AI and Stochastic Processes",
+        "course": "BEMACS '24",
+        "author": "Francesco Vacca",
+        "supervisor": "prof. Antonio Lijoi",
+        "thesis_link": "https://drive.google.com/file/d/1PWO3rARiD_2EbCDxPnmaxyZynB_zUHeC/view?usp=sharing",
+        "author_link": "https://www.linkedin.com/in/francescoovacca/"
+    },
+    {
+        "title": "An Approach to the Explanation of Annotator-level Differences in Toxicity Detection Through Irony",
+        "course": "BEMACS '24",
+        "author": "Luca Colaci",
+        "supervisor": "Prof. Kai Zhu",
+        "thesis_link": "https://drive.google.com/file/d/1Y029r45zFGD2pxRvNwWWzoQcNqSnGFzd/view?usp=sharing",
+        "author_link": "https://www.linkedin.com/in/luca-colaci-438837223/"
+    },
+    {
         "title": "Exploring Transcriptional Interactions and Language Models for Single Cell RNA-seq Masked Value Prediction",
         "course": "BEMACS '24",
         "author": "Giacomo Cirò",
