@@ -6,7 +6,6 @@
 * License: https://bootstrapmade.com/license/
 */
 
-
 function updateTheses(){
   fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/theses.json")
     .then(response => response.json())
