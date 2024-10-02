@@ -8,7 +8,7 @@
 
 
 function updateTheses(){
-  fetch("https://bsmachinelearning.github.io/assets/theses.json")
+  fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/theses.json")
     .then(response => response.json())
     .then(data => {
       delay = 0
@@ -17,7 +17,7 @@ function updateTheses(){
         const { title, course, author, supervisor, thesis_link, author_link } = project;
         // Initialize projectHTML with the common elements
         var thesisHTML = `
-            <!-- Giacomo Ciro -->
+            <!-- ${author} -->
             <div class="col-lg-4" data-aos="zoom-in">
               <article>
                   <p class="post-category">${course}</p>
@@ -37,14 +37,21 @@ function updateTheses(){
 
         // Append the projectHTML to the project list
         document.getElementById('theses-container').innerHTML += thesisHTML;
+        console.log('Thesis list updated from https://bsmachinelearning.github.io/assets/theses.json')
       });
     })
     .catch(error => {
       console.error('Error fetching data:', error);
     });
-console.log('Thesis list updated from https://bsmachinelearning.github.io/assets/theses.json')
 };
 
+// if on the theses page, update projects
+window.onload = function() {
+  var path = window.location.pathname;
+  if (path.includes('theses.html')) {
+      updateTheses();
+  };
+};
 
 (function() {
   "use strict";
@@ -145,9 +152,9 @@ console.log('Thesis list updated from https://bsmachinelearning.github.io/assets
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  // const glightbox = GLightbox({
+  //   selector: '.glightbox'
+  // });
 
   /**
    * Init swiper sliders
@@ -251,11 +258,3 @@ console.log('Thesis list updated from https://bsmachinelearning.github.io/assets
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
-
-// if on the theses page, update projects
-window.onload = function() {
-  var path = window.location.pathname;
-  if (path.includes('theses.html')) {
-      updateTheses();
-  };
-};

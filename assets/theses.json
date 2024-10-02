@@ -6,5 +6,21 @@
         "supervisor": "Prof. Francesca Buffa",
         "thesis_link": "https://drive.google.com/file/d/1PsStwSlc_BxQOAnc96tJ0ci7XKkDgRiv/view?usp=sharing",
         "author_link": "https://www.linkedin.com/in/giacomo-ciro/"
+    },
+    {
+        "title": "Bayesian Optimization for Database Management",
+        "course": "BEMACS '24",
+        "author": "Giulio Caputi",
+        "supervisor": "prof. Omiros Papaspiliopoulos",
+        "thesis_link": "https://drive.google.com/file/d/1XLjXoBWXIrGVpc8IvzdOH4Si8P_W9kBV/view?usp=sharing",
+        "author_link": "https://www.linkedin.com/in/giulio-caputi/"
+    },
+    {
+        "title": "Bayesian Optimization for Database Management",
+        "course": "BEMACS '24",
+        "author": "Alessandro Morosini",
+        "supervisor": "prof. Antonio Lijoi",
+        "thesis_link": "https://drive.google.com/file/d/1KieYffYWDcbptwpA65vHfY5D9x_I1mWj/view?usp=sharing",
+        "author_link": "https://www.linkedin.com/in/alessandro-morosini/"
     }
 ]
