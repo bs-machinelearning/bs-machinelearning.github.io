@@ -12,7 +12,7 @@
         "course": "BEMACS '24",
         "author": "Luca Colaci",
         "supervisor": "Prof. Kai Zhu",
-        "thesis_link": "https://drive.google.com/file/d/1Y029r45zFGD2pxRvNwWWzoQcNqSnGFzd/view?usp=sharing",
+        "thesis_link": "./assets/theses/luca_colaci_bemacs_24.pdf",
         "author_link": "https://www.linkedin.com/in/luca-colaci-438837223/"
     },
     {
@@ -20,7 +20,7 @@
         "course": "BEMACS '24",
         "author": "Giacomo Cirò",
         "supervisor": "Prof. Francesca Buffa",
-        "thesis_link": "https://drive.google.com/file/d/1PsStwSlc_BxQOAnc96tJ0ci7XKkDgRiv/view?usp=sharing",
+        "thesis_link": "./assets/theses/giacomo_ciro_bemacs_24.pdf",
         "author_link": "https://www.linkedin.com/in/giacomo-ciro/"
     },
     {
@@ -28,7 +28,7 @@
         "course": "BEMACS '24",
         "author": "Giulio Caputi",
         "supervisor": "Prof. Omiros Papaspiliopoulos",
-        "thesis_link": "https://drive.google.com/file/d/1XLjXoBWXIrGVpc8IvzdOH4Si8P_W9kBV/view?usp=sharing",
+        "thesis_link": "./assets/theses/giulio_caputi_bemacs_24.pdf",
         "author_link": "https://www.linkedin.com/in/giulio-caputi/"
     },
     {
@@ -36,7 +36,7 @@
         "course": "BEMACS '24",
         "author": "Alessandro Morosini",
         "supervisor": "Prof. Antonio Lijoi",
-        "thesis_link": "https://drive.google.com/file/d/1KieYffYWDcbptwpA65vHfY5D9x_I1mWj/view?usp=sharing",
+        "thesis_link": "./assets/theses/alessandro_morosini_bemacs_24.pdf",
         "author_link": "https://www.linkedin.com/in/alessandro-morosini/"
     }
 ]
