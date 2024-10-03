@@ -1,6 +1,14 @@
 [
     {
-        "title": "Can Machine Learning Aid Econometrics? A Methodological Study On Heterogeneous Treatment Effects Estimation",
+        "title": "Enhancing Collaborative Filtering with Mixture Models: Theory and Applications",
+        "course": "BESS '24",
+        "author": "Tancredi Dorsi",
+        "supervisor": "Prof. Antonio Lijoi",
+        "thesis_link": "./assets/theses/tancredi_dorsi_bemacs_24.pdf",
+        "author_link": ""
+    },
+    {
+        "title": "Can Machine Learning Aid Econometrics? A Methodological Study on Heterogeneous Treatment Effects Estimation",
         "course": "BESS '24",
         "author": "Matilde Dolfato",
         "supervisor": "Prof. Jerome Adda",
@@ -8,7 +16,7 @@
         "author_link": ""
     },
     {
-        "title": "Inference With Complex Distributions: LDA and HDP In The Context Of Topic Modeling",
+        "title": "Inference with Complex Distributions: LDA and HDP in the Context of Topic Modeling",
         "course": "BEMACS '24",
         "author": "Giulio Pirotta",
         "supervisor": "Prof. Antonio Lijoi",
@@ -16,7 +24,7 @@
         "author_link": ""
     },
     {
-        "title": "Advanced Statistical Methods in Network Analysis: the role of Stochastic Block Modeling",
+        "title": "Advanced Statistical Methods in Network Analysis: the Role of Stochastic Block Modeling",
         "course": "BEMACS '24",
         "author": "Tommaso Vezzoli",
         "supervisor": "Prof. Antonio Lijoi",
