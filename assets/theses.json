@@ -1,5 +1,29 @@
 [
     {
+        "title": "Can Machine Learning Aid Econometrics? A Methodological Study On Heterogeneous Treatment Effects Estimation",
+        "course": "BESS '24",
+        "author": "Matilde Dolfato",
+        "supervisor": "Prof. Jerome Adda",
+        "thesis_link": "./assets/theses/matilde_dolfato_bess_24.pdf",
+        "author_link": ""
+    },
+    {
+        "title": "Inference With Complex Distributions: LDA and HDP In The Context Of Topic Modeling",
+        "course": "BEMACS '24",
+        "author": "Giulio Pirotta",
+        "supervisor": "Prof. Antonio Lijoi",
+        "thesis_link": "./assets/theses/giulio_pirotta_bemacs_24.pdf",
+        "author_link": ""
+    },
+    {
+        "title": "Advanced Statistical Methods in Network Analysis: the role of Stochastic Block Modeling",
+        "course": "BEMACS '24",
+        "author": "Tommaso Vezzoli",
+        "supervisor": "Prof. Antonio Lijoi",
+        "thesis_link": "./assets/theses/tommaso_vezzoli_bemacs_24.pdf",
+        "author_link": ""
+    },
+    {
         "title": "Generative Modeling in AI and Stochastic Processes",
         "course": "BEMACS '24",
         "author": "Francesco Vacca",
