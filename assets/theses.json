@@ -1,5 +1,13 @@
 [
     {
+        "title": "Stochastic Block Models for Community Detection in Graphs",
+        "course": "BAI '24",
+        "author": "Luca Gandolfi",
+        "supervisor": "Prof. Giacomo Zanella",
+        "thesis_link": "./assets/theses/luca_gandolfi_bai_24.pdf",
+        "author_link": ""
+    },
+    {
         "title": "An Overview on Multiview Learning and View Selection Methods",
         "course": "BAI '24",
         "author": "Beatrice Citterio",
