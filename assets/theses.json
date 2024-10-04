@@ -1,7 +1,23 @@
 [
     {
+        "title": "An Overview on Multiview Learning and View Selection Methods",
+        "course": "BAI '24",
+        "author": "Beatrice Citterio",
+        "supervisor": "Prof. Bostond Tibor Szabo",
+        "thesis_link": "./assets/theses/beatrice_citterio_bai_24.pdf",
+        "author_link": ""
+    },
+    {
+        "title": "Predictive Modeling for Sales and Consumption in the Fast-Moving Consumer Goods Market: a Regression Analysis Perspective",
+        "course": "BEMACS '24",
+        "author": "Rebecca Benedetti",
+        "supervisor": "Prof. Jessica Jumee Kim",
+        "thesis_link": "./assets/theses/rebecca_benedetti_bemacs_24.pdf",
+        "author_link": ""
+    },
+    {
         "title": "Enhancing Collaborative Filtering with Mixture Models: Theory and Applications",
-        "course": "BESS '24",
+        "course": "BEMACS '24",
         "author": "Tancredi Dorsi",
         "supervisor": "Prof. Antonio Lijoi",
         "thesis_link": "./assets/theses/tancredi_dorsi_bemacs_24.pdf",
