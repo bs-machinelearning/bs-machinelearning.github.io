@@ -1,5 +1,13 @@
 [
     {
+        "title": "On the Granularity of Data: a Comparison Between Classical and Deep Learning Approaches for Time Series Forecasting",
+        "course": "BEMACS '23",
+        "author": "Giulia Paggini",
+        "supervisor": "Prof. Daniele Tonini",
+        "thesis_link": "./assets/theses/giulia_paggini_bemacs_23.pdf",
+        "author_link": ""
+    },
+    {
         "title": "Stochastic Block Models for Community Detection in Graphs",
         "course": "BAI '24",
         "author": "Luca Gandolfi",
