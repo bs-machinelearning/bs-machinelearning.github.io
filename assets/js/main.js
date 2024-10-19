@@ -6,6 +6,52 @@
 * License: https://bootstrapmade.com/license/
 */
 
+function updateTheses(){
+  fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/theses.json")
+    .then(response => response.json())
+    .then(data => {
+      delay = 0
+      data.forEach(project => {
+        console.log(project)
+        const { title, course, author, supervisor, thesis_link, author_link } = project;
+        // Initialize projectHTML with the common elements
+        var thesisHTML = `
+            <!-- ${author} -->
+            <div class="col-lg-4" data-aos="zoom-in">
+              <article>
+                  <p class="post-category">${course}</p>
+                  <h2 class="title">
+                  <a href="${thesis_link}">${title}</a>
+                  </h2>
+                  <div class="d-flex align-items-center">
+                  <div class="post-meta">
+                      <p class="post-author"><a href="${author_link}">${author}</a></p>
+                      <p class="post-author">${supervisor}</p>
+                  </div>
+                  </div>
+              </article>
+            </div>
+        `;
+        delay += 25
+
+        // Append the projectHTML to the project list
+        document.getElementById('theses-container').innerHTML += thesisHTML;
+        console.log('Thesis list updated from https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/theses.json')
+      });
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
+};
+
+// if on the theses page, update projects
+window.onload = function() {
+  var path = window.location.pathname;
+  if (path.includes('theses.html')) {
+      updateTheses();
+  };
+};
+
 (function() {
   "use strict";
 
@@ -105,9 +151,9 @@
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  // const glightbox = GLightbox({
+  //   selector: '.glightbox'
+  // });
 
   /**
    * Init swiper sliders

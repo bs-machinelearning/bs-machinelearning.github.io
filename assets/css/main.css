@@ -67,7 +67,7 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--default-color);
   text-decoration: none;
   transition: 0.3s;
 }
@@ -253,7 +253,7 @@ h6 {
 }
 
 .header .btn-getstarted,
-.header .btn-getstarted:focus {
+.header .btn-getstarted:focus{
   color: var(--contrast-color);
   background: var(--accent-color);
   font-size: 14px;
@@ -2418,9 +2418,18 @@ section,
 /*--------------------------------------------------------------
 # Blog Posts Section
 --------------------------------------------------------------*/
+.blog-page .page-title a {
+  color: var(--default-color);
+}
+
+.blog-page .page-title a:hover {
+  color: var(--accent-color);
+}
+
+
 .blog-posts article {
   background-color: var(--surface-color);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 25px rgba(102, 0, 204, 0.1);
   padding: 30px;
   height: 100%;
   border-radius: 10px;
@@ -2467,6 +2476,80 @@ section,
 }
 
 .blog-posts .post-date {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Thesis List Section
+--------------------------------------------------------------*/
+.theses-page .page-title a {
+  color: var(--default-color);
+  text-decoration: underline;
+}
+
+.theses-page .page-title a:hover {
+  color: var(--accent-color);
+}
+
+.theses article {
+  background-color: var(--surface-color);
+  box-shadow: 0 4px 25px rgba(102, 0, 204, 0.1);
+  padding: 30px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.theses .post-img {
+  max-height: 240px;
+  margin: -30px -30px 15px -30px;
+  overflow: hidden;
+}
+
+.theses .post-category {
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 10px;
+}
+
+.theses .title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.theses .title a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.theses .title a:hover {
+  color: var(--accent-color);
+}
+
+.theses .post-author-img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.theses .post-author {
+  margin-bottom: 5px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.theses .post-author a{
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.theses .post-author a:hover{
+  color: var(--accent-color);
+}
+
+.theses .post-date {
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin-bottom: 0;
@@ -2539,6 +2622,7 @@ section,
 
 .blog-details .content {
   margin-top: 20px;
+  text-align: justify;
 }
 
 .blog-details .content h3 {
@@ -2611,6 +2695,7 @@ section,
 
 .blog-details .meta-bottom {
   padding-top: 10px;
+  margin-top: 20px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
@@ -2664,6 +2749,23 @@ section,
   padding-left: 5px;
 }
 
+.blog-details .btn-chatbot,
+.blog-details .btn-chatbot:focus{
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 26px;
+  margin: 0;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.blog-details .btn-chatbot:hover,
+.blog-details .btn-chatbot:focus:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
 /*--------------------------------------------------------------
 # Blog Author Section
 --------------------------------------------------------------*/

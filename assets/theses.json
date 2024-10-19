@@ -1,0 +1,106 @@
+[
+    {
+        "title": "On the Granularity of Data: a Comparison Between Classical and Deep Learning Approaches for Time Series Forecasting",
+        "course": "BEMACS '23",
+        "author": "Giulia Paggini",
+        "supervisor": "Prof. Daniele Tonini",
+        "thesis_link": "./assets/theses/giulia_paggini_bemacs_23.pdf",
+        "author_link": ""
+    },
+    {
+        "title": "Stochastic Block Models for Community Detection in Graphs",
+        "course": "BAI '24",
+        "author": "Luca Gandolfi",
+        "supervisor": "Prof. Giacomo Zanella",
+        "thesis_link": "./assets/theses/luca_gandolfi_bai_24.pdf",
+        "author_link": ""
+    },
+    {
+        "title": "An Overview on Multiview Learning and View Selection Methods",
+        "course": "BAI '24",
+        "author": "Beatrice Citterio",
+        "supervisor": "Prof. Bostond Tibor Szabo",
+        "thesis_link": "./assets/theses/beatrice_citterio_bai_24.pdf",
+        "author_link": ""
+    },
+    {
+        "title": "Predictive Modeling for Sales and Consumption in the Fast-Moving Consumer Goods Market: a Regression Analysis Perspective",
+        "course": "BEMACS '24",
+        "author": "Rebecca Benedetti",
+        "supervisor": "Prof. Jessica Jumee Kim",
+        "thesis_link": "./assets/theses/rebecca_benedetti_bemacs_24.pdf",
+        "author_link": ""
+    },
+    {
+        "title": "Enhancing Collaborative Filtering with Mixture Models: Theory and Applications",
+        "course": "BEMACS '24",
+        "author": "Tancredi Dorsi",
+        "supervisor": "Prof. Antonio Lijoi",
+        "thesis_link": "./assets/theses/tancredi_dorsi_bemacs_24.pdf",
+        "author_link": ""
+    },
+    {
+        "title": "Can Machine Learning Aid Econometrics? A Methodological Study on Heterogeneous Treatment Effects Estimation",
+        "course": "BESS '24",
+        "author": "Matilde Dolfato",
+        "supervisor": "Prof. Jerome Adda",
+        "thesis_link": "./assets/theses/matilde_dolfato_bess_24.pdf",
+        "author_link": ""
+    },
+    {
+        "title": "Inference with Complex Distributions: LDA and HDP in the Context of Topic Modeling",
+        "course": "BEMACS '24",
+        "author": "Giulio Pirotta",
+        "supervisor": "Prof. Antonio Lijoi",
+        "thesis_link": "./assets/theses/giulio_pirotta_bemacs_24.pdf",
+        "author_link": ""
+    },
+    {
+        "title": "Advanced Statistical Methods in Network Analysis: the Role of Stochastic Block Modeling",
+        "course": "BEMACS '24",
+        "author": "Tommaso Vezzoli",
+        "supervisor": "Prof. Antonio Lijoi",
+        "thesis_link": "./assets/theses/tommaso_vezzoli_bemacs_24.pdf",
+        "author_link": ""
+    },
+    {
+        "title": "Generative Modeling in AI and Stochastic Processes",
+        "course": "BEMACS '24",
+        "author": "Francesco Vacca",
+        "supervisor": "Prof. Omiros Papaspiliopoulos",
+        "thesis_link": "./assets/theses/francesco_vacca_bemacs_24.pdf",
+        "author_link": "https://www.linkedin.com/in/francescoovacca/"
+    },
+    {
+        "title": "An Approach to the Explanation of Annotator-level Differences in Toxicity Detection Through Irony",
+        "course": "BEMACS '24",
+        "author": "Luca Colaci",
+        "supervisor": "Prof. Kai Zhu",
+        "thesis_link": "./assets/theses/luca_colaci_bemacs_24.pdf",
+        "author_link": "https://www.linkedin.com/in/luca-colaci-438837223/"
+    },
+    {
+        "title": "Exploring Transcriptional Interactions and Language Models for Single Cell RNA-seq Masked Value Prediction",
+        "course": "BEMACS '24",
+        "author": "Giacomo Cirò",
+        "supervisor": "Prof. Francesca Buffa",
+        "thesis_link": "./assets/theses/giacomo_ciro_bemacs_24.pdf",
+        "author_link": "https://www.linkedin.com/in/giacomo-ciro/"
+    },
+    {
+        "title": "Bayesian Optimization for Database Management",
+        "course": "BEMACS '24",
+        "author": "Giulio Caputi",
+        "supervisor": "Prof. Omiros Papaspiliopoulos",
+        "thesis_link": "./assets/theses/giulio_caputi_bemacs_24.pdf",
+        "author_link": "https://www.linkedin.com/in/giulio-caputi/"
+    },
+    {
+        "title": "Statistical Models for Survival Data: Theory and Applications",
+        "course": "BEMACS '24",
+        "author": "Alessandro Morosini",
+        "supervisor": "Prof. Antonio Lijoi",
+        "thesis_link": "./assets/theses/alessandro_morosini_bemacs_24.pdf",
+        "author_link": "https://www.linkedin.com/in/alessandro-morosini/"
+    }
+]
