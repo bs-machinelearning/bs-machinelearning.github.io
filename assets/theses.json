@@ -1,5 +1,13 @@
 [
     {
+        "title": "Graph Neural Networks: From Foundations to Temporal Applications",
+        "course": "BEMACS '24",
+        "author": "Marco Lomele",
+        "supervisor": "Prof. Luca Saglietti",
+        "thesis_link": "./assets/theses/marco_lomele_bemacs_24.pdf",
+        "author_link": "https://www.linkedin.com/in/marco-lomele/"
+    },
+    {
         "title": "On the Granularity of Data: a Comparison Between Classical and Deep Learning Approaches for Time Series Forecasting",
         "course": "BEMACS '23",
         "author": "Giulia Paggini",
