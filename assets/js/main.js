@@ -6,6 +6,16 @@
 * License: https://bootstrapmade.com/license/
 */
 
+//-----------------FOOTER
+function includeFooter() {
+  fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/footer.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('footer').innerHTML = data;
+          console.log('Footer updated')
+      });
+};
+
 function updateTheses(){
   fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/theses.json")
     .then(response => response.json())
@@ -232,6 +242,7 @@ window.onload = function() {
         }, 100);
       }
     }
+    includeFooter();
   });
 
   /**
