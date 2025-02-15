@@ -8,7 +8,7 @@
 
 //-----------------FOOTER
 function includeFooter() {
-  fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/footer.html")
+  fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/footer.html")
       .then(response => response.text())
       .then(data => {
           document.getElementById('footer').innerHTML = data;
