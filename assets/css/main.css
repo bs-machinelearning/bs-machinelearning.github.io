@@ -2607,6 +2607,10 @@ section,
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
+.blog-details .article a {
+  text-decoration: underline;
+}
+
 .blog-details .post-img {
   margin: -30px -30px 20px -30px;
   overflow: hidden;
