@@ -68,22 +68,8 @@
 
     <main class="main">
 
-        <!-- Page Title -->
-        <!-- <div class="page-title">
-        <div class="container d-lg-flex justify-content-between align-items-center">
-            <h1 class="mb-2 mb-lg-0">Blog Details</h1>
-            <nav class="breadcrumbs">
-            <ol>
-                <li><a href="index.html">Home</a></li>
-                <li class="current">Blog Details</li>
-            </ol>
-            </nav>
-        </div>
-        </div> -->
-        <!-- End Page Title -->
 
-        <div class="container">
-        <div class="row">
+        <div class="d-flex justify-content-center align-items-center flex-column">
 
             <div class="col-lg-8">
 
@@ -169,7 +155,9 @@
                             content removed. As a result, the model begins to behave and respond in a manner akin to a human being. And finally the “cherry on top“: RLHF 
                             enables the model to eliminate a lot of toxicity, hallucinations and to be more aligned to the users request.
                         </p>
-                        <img src="../assets/img/proj/digital-symbiosis-1.png" class="img-fluid" alt="">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="../assets/img/proj/digital-symbiosis-1.png" class="img-fluid" alt="">
+                        </div>
 
                         <p>
                             To explain in more technical terms, the process begins with the LLM producing responses, which are then evaluated and ranked by human 
@@ -177,7 +165,9 @@
                             with the goal of giving a score to the next responses generated from the original LM model. The greater the similarity between the new 
                             answer and the best answer as judged by humans, the better the score received by the reward model.
                         </p>
-                        <img src="../assets/img/proj/digital-symbiosis-2.png" class="img-fluid" alt="">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="../assets/img/proj/digital-symbiosis-2.png" class="img-fluid" alt="">
+                        </div>
                         <p>
                             It' s obvious that in this case the second response is going to be preferred by a human annotator. While the first response is less 
                             helpful and more offensive, it still follows a logical pattern, it's grammatically correct and gives a (terrible) answer that covers all 
@@ -197,7 +187,9 @@
                             Unfortunately, LLMs are not that easy to train and, on the contrary, they are very good in finding loopholes to maximize the reward. 
                             Let's look at what an incorrect response the LLM can give based on the reward model metrics and the preferred second response:
                         </p>
-                        <img src="../assets/img/proj/digital-symbiosis-3.png" class="img-fluid" alt="">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="../assets/img/proj/digital-symbiosis-3.png" class="img-fluid" alt="">
+                        </div>
                         <p>
                             Maybe, in this case, the reward model has taken the assignment of replicating human preference a little bit too serious, so much that 
                             this answer looks everything but human. The reward model is very likely to give this answer a high score because it recalls very 
@@ -223,7 +215,9 @@
                         <p>
                             A recent study from OpenAI compared its model instructed with RLHF “InstructGPT” with the base GPT3 model and the results are the following:
                         </p>
-                        <img src="../assets/img/proj/digital-symbiosis-4.png" class="img-fluid" alt="">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img src="../assets/img/proj/digital-symbiosis-4.png" class="img-fluid" alt="">
+                        </div>
                         <p>
                             From the results, it's clear the RLHF has proved superior in some tasks, especially in avoiding creating toxic, wrong and context-inappropriate 
                             content thanks to the knowledge learned from human annotators, but is this process efficient and sustainable?
@@ -294,23 +288,7 @@
                             artificial intelligences if these can even replicate the most subtle facets of human beings? The answer may redefine our relationship with technology, 
                             as we pivot from direct trainers to spectators of intelligent systems that can learn, adapt, and perhaps even understand, with a finesse that rivals our own.
                         </p>
-                        <!-- <img src="../assets/img/proj/digital-symbiosis-5.png" class="img-fluid" alt=""> -->
-                        </div><!-- End post content -->
-
-                        <div class="meta-bottom">
-                        <!-- <i class="bi bi-folder"></i>
-                        <ul class="cats">
-                            <li><a href="#">Business</a></li>
-                        </ul>
-
-                        <i class="bi bi-tags"></i>
-                        <ul class="tags">
-                            <li><a href="#">Creative</a></li>
-                            <li><a href="#">Tips</a></li>
-                            <li><a href="#">Marketing</a></li>
-                        </ul> -->
                         </div>
-                        <!-- End meta bottom -->
 
                     </article>
 
@@ -339,56 +317,6 @@
                 </section><!-- /Blog Author Section -->
 
             </div>
-
-            <div class="col-lg-4 sidebar">
-
-            <div class="widgets-container">
-
-
-                <!-- Recent Posts Widget -->
-                <div class="recent-posts-widget widget-item">
-
-                <h3 class="widget-title">Recent Posts</h3>
-                
-                <div class="post-item">
-                    <img src="../assets/img/proj/gender-bias-songs-lyrics.jpg" alt="" class="flex-shrink-0">
-                    <div>
-                    <h4><a href="gender-bias.html">Gender Bias in Song Lyrics</a></h4>
-                    <time datetime="2020-01-01">April 21, 2024</time>
-                    </div>
-                </div>
-                <div class="post-item">
-                    <img src="../assets/img/proj/proj-3.png" alt="" class="flex-shrink-0">
-                    <div>
-                    <h4><a href="bocconi-chatbot.html">Bocconi Chatbot</a></h4>
-                    <time datetime="2020-01-01">March 3, 2024</time>
-                    </div>
-                </div>
-                <!-- End recent post item-->
-
-                </div><!--/Recent Posts Widget -->
-
-                <!-- Tags Widget -->
-                <div class="tags-widget widget-item">
-
-                <h3 class="widget-title">Tags</h3>
-                <ul>
-                    <li><a href="#">Natural Language Processing</a></li>
-                    <li><a href="#">ChatGPT</a></li>
-                    <li><a href="#">Alignment</a></li>
-                    <li><a href="#">Reinforcement Learning</a></li>
-                    <li><a href="#">Large Language Models</a></li>
-                    <li><a href="#">RLHF</a></li>
-                    <li><a href="#">Ethics</a></li>
-                </ul>
-
-                </div><!--/Tags Widget -->
-
-            </div>
-
-            </div>
-
-        </div>
         </div>
 
     </main>
