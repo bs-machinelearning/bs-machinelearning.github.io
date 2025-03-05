@@ -3,8 +3,24 @@
         "title": "Spatial Heterogeneity in Real Estate Markets",
         "main_image": "spatial_heterogeneity_1.jpg",
         "project_page": "spatial-heterogeneity.html",
-        "authors":["Marco Lomele", "Giovanni Mantovani", "Letizia Dimonopoli", "Sofia Villa"],
-        "authors_img":["mrml.jpeg", "na", "na", "na"],
+        "authors":[
+            "Marco Lomele",
+            "Giovanni Mantovani",
+            "Letizia Dimonopoli",
+            "Sofia Villa"
+        ],
+        "authors_img":[
+            "mrml.jpeg",
+            "giovanni-mantovani.jpg",
+            "letizia-dimonopoli.jpg",
+            "sofia-villa.jpg"
+        ],
+        "authors_link": [
+            "https://www.linkedin.com/in/marco-lomele/",
+            "https://www.linkedin.com/in/giovanni-mantovani-21102821b/",
+            "https://www.linkedin.com/in/letiziadimonopoli/",
+            "https://www.linkedin.com/in/sofiavilla/"
+        ],
         "date" : "March 2, 2025",
         "content_type": "Research"
     },
@@ -12,8 +28,21 @@
         "title": "Roof Segmentation for Solar Energy Estimation",
         "main_image": "solar-energy-estimation-2.png",
         "project_page": "solar-energy-estimation.html",
-        "authors":["Byran Bisetti", "Andrea Duico", "Filip Juren"],
-        "authors_img":["bryan.jpg", "andrea-duico.jpg", "filip-juren.jpg"],
+        "authors":[
+            "Byran Bisetti",
+            "Andrea Duico",
+            "Filip Juren"
+        ],
+        "authors_img":[
+            "bryan.jpg",
+            "andrea-duico.jpg",
+            "filip-juren.jpg"
+        ],
+        "authors_link": [
+            "https://www.linkedin.com/in/bryan-bisetti/",
+            "https://www.linkedin.com/in/andreaduico/",
+            "https://www.linkedin.com/in/filipjuren/"
+        ],
         "date" : "February 23, 2025",
         "content_type": "Research"
     },
@@ -21,8 +50,15 @@
         "title": "Bocconi Chatbot",
         "main_image": "proj-3.png",
         "project_page": "bocconi-chatbot.html",
-        "authors":["Valerio Di Palo"],
-        "authors_img":["valerio-dipalo.jpeg"],
+        "authors":[
+            "Valerio Di Palo"
+        ],
+        "authors_img":[
+            "valerio-dipalo.jpeg"
+        ],
+        "authors_link": [
+            "https://www.linkedin.com/in/valedipalo/"
+        ],
         "date" : "March 3, 2024",
         "content_type": "Implementation"
     },
@@ -30,8 +66,15 @@
         "title": "Reinforcement Learning: How to Train Your Machine",
         "main_image": "proj-2.jpg",
         "project_page": "reinforcement-learning.html",
-        "authors":["Ledio Duda"],
-        "authors_img":["ledio-duda.png"],
+        "authors":[
+            "Ledio Duda"
+        ],
+        "authors_img":[
+            "ledio-duda.png"
+        ],
+        "authors_link": [
+            "https://www.linkedin.com/in/ledio-duda/"
+        ],
         "date" : "Feb 19, 2024",
         "content_type": "Article"
     },
@@ -39,8 +82,15 @@
         "title": "Digital Symbiosis: How Machines Learn From The Human Mind",
         "main_image": "proj-1.jpg",
         "project_page": "ditigal-symbiosis.html",
-        "authors":["Marco Beltramin"],
-        "authors_img":["marco-beltramin.png"],
+        "authors":[
+            "Marco Beltramin"
+        ],
+        "authors_img":[
+            "marco-beltramin.png"
+        ],
+        "authors_link": [
+            "https://www.linkedin.com/in/marco-beltramin-811b74298/"
+        ],
         "date" : "Jan 28, 2024",
         "content_type": "Article"
     },
@@ -48,8 +98,18 @@
         "title": "Missing Knowledge Links",
         "main_image": "proj-4.jpg",
         "project_page": "missing-knowledge-links.html",
-        "authors":["Giulio Caputi", "Francesco Braicovich"],
-        "authors_img":["cap.jpg", "braicovich.jpeg"],
+        "authors":[
+            "Giulio Caputi",
+            "Francesco Braicovich"
+        ],
+        "authors_img":[
+            "cap.jpg",
+            "braicovich.jpeg"
+        ],
+        "authors_link": [
+            "https://www.linkedin.com/in/giulio-caputi/",
+            "https://www.linkedin.com/in/francescobraicovich/"
+        ],
         "date" : "January 19, 2024",
         "content_type": "Research"
     }

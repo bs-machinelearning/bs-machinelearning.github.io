@@ -20,6 +20,7 @@ function updateProjects(){
           project_page,
           authors,
           authors_img,
+          author_link,
           date,
           content_type
         } = project;
@@ -54,9 +55,9 @@ function updateProjects(){
         <div class="post-meta">
         `
 
-        authors.forEach(author => {
+        authors.forEach((index, author) => {
           projectHTML += `
-          <p class="post-author">${author}</p>
+          <p class="post-author"><a href="${author_link[index]}">${author}</a></p>
           `
         })
         
