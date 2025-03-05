@@ -8,13 +8,12 @@ function includeFooter() {
       });
 };
 
-function updateTheses(){
+function updateProjects(){
   fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/projects.json")
     .then(response => response.json())
     .then(data => {
       delay = 0
       data.forEach(project => {
-        console.log(project)
         const { 
           title,
           main_image,
@@ -24,6 +23,7 @@ function updateTheses(){
           date,
           content_type
         } = project;
+        console.log(project)
         var projectHTML = `
             <div class="col-lg-4" data-aos="zoom-in">
               <article>
@@ -70,9 +70,9 @@ function updateTheses(){
         delay += 25
 
         // Append the projectHTML to the project list
-        document.getElementById('theses-container').innerHTML += thesisHTML;
-        console.log('Thesis list updated from https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/projects.json')
+        document.getElementById('project-container').innerHTML += projectHTML;
       });
+    console.log('Projects updated')
     })
     .catch(error => {
       console.error('Error fetching data:', error);
@@ -118,11 +118,13 @@ function updateTheses(){
     });
 };
 
-// if on the theses page, update projects
+// if on the correct page, dynamically update list
 window.onload = function() {
   var path = window.location.pathname;
   if (path.includes('theses.html')) {
       updateTheses();
+  } else if (path.includes('projects.html')) {
+      updateProjects();
   };
 };
 
