@@ -1,11 +1,3 @@
-/**
-* Template Name: HeroBiz
-* Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 //-----------------FOOTER
 function includeFooter() {
   fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/footer.html")
@@ -15,6 +7,78 @@ function includeFooter() {
           console.log('Footer updated')
       });
 };
+
+function updateTheses(){
+  fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/projects.json")
+    .then(response => response.json())
+    .then(data => {
+      delay = 0
+      data.forEach(project => {
+        console.log(project)
+        const { 
+          title,
+          main_image,
+          project_page,
+          authors,
+          authors_img,
+          date,
+          content_type
+        } = project;
+        var projectHTML = `
+            <div class="col-lg-4" data-aos="zoom-in">
+              <article>
+                  <div class="post-img">
+                  <img src="assets/img/proj/${main_image}" alt="" class="img-fluid">
+                  </div>
+
+                  <p class="post-category">${content_type}</p>
+
+                  <h2 class="title">
+                  <a href="./project-pages/${project_page}">${title}</a>
+                  </h2>
+
+                  <div class="d-flex align-items-center">
+        `
+        authors_img.forEach(img =>{
+          if (img == "na") {
+            img = "black_bg.png"
+          }
+          projectHTML += `
+          <img src="assets/img/team/${img}" alt="" class="img-fluid post-author-img flex-shrink-0">
+          `
+        })
+
+        projectHTML += `
+        <div class="post-meta">
+        `
+
+        authors.forEach(author => {
+          projectHTML += `
+          <p class="post-author">${author}</p>
+          `
+        })
+        
+        projectHTML += `
+        <p class="post-date">
+                      <time datetime="2022-01-01">${date}</time>
+                      </p>
+                  </div>
+                  </div>
+              </article>
+            </div>
+        `;
+        delay += 25
+
+        // Append the projectHTML to the project list
+        document.getElementById('theses-container').innerHTML += thesisHTML;
+        console.log('Thesis list updated from https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/projects.json')
+      });
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
+};
+
 
 function updateTheses(){
   fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/theses.json")

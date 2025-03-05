@@ -1,0 +1,14 @@
+[
+    {
+        "title": "demo",
+        "main_image": "spatial_heterogeneity_1.jpg",
+        "project_page": "spatial-heterogeneity.html",
+        "authors":["Marco Lomele", "Giovanni Mantovani"],
+        "authors_img":["mrml.jpeg", "na"],
+        "date" : "March 2, 2025",
+        "content_type": "Research"
+    },
+    {
+
+    }
+]
