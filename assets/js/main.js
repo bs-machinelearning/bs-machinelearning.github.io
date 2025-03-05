@@ -23,7 +23,6 @@ function updateProjects(){
           date,
           content_type
         } = project;
-        console.log(project)
         var projectHTML = `
             <div class="col-lg-4" data-aos="zoom-in">
               <article>
@@ -42,9 +41,12 @@ function updateProjects(){
         authors_img.forEach(img =>{
           if (img == "na") {
             img = "black_bg.png"
+          } else {
+            img = "team/" + img
           }
+
           projectHTML += `
-          <img src="assets/img/team/${img}" alt="" class="img-fluid post-author-img flex-shrink-0">
+          <img src="assets/img/${img}" alt="" class="img-fluid post-author-img flex-shrink-0">
           `
         })
 
