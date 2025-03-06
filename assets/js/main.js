@@ -25,10 +25,10 @@ function updateProjects(){
           content_type
         } = project;
         var projectHTML = `
-            <div class="col-lg-4" data-aos="zoom-in">
+            <div class="col-12 col-sm-12 col-md-6	col-lg-6 col-xl-4 project-card" data-aos="zoom-in">
               <article>
                   <div class="post-img">
-                  <img src="assets/img/proj/${main_image}" alt="" class="img-fluid">
+                    <img src="assets/img/proj/${main_image}" alt="" class="img-fluid">
                   </div>
 
                   <div class = "d-flex flex-row justify-content-between">
@@ -37,36 +37,40 @@ function updateProjects(){
                         <time datetime="2022-01-01">${date}</time>
                     </p>
                   </div>
+                  
                   <h2 class="title">
-                  <a href="./project-pages/${project_page}">${title}</a>
+                    <a href="./project-pages/${project_page}">${title}</a>
                   </h2>
 
-                  <div class="d-flex align-items-center">
-        `
-        authors_img.forEach(img =>{
-          if (img == "na") {
-            img = "black_bg.png"
-          } else {
-            img = "team/" + img
-          }
-
-          projectHTML += `
-          <img src="assets/img/${img}" alt="" class="img-fluid post-author-img flex-shrink-0">
-          `
-        })
-
-        projectHTML += `
-        <div class="post-meta">
+                  <div class = "container">
+                  <div class="post-meta row">
         `
 
         for (let i = 0; i < authors.length; i++) {
+        
+          if (authors_img[i] == "na") {
+            img = "black_bg.png"
+          } else {
+            img = "team/" + authors_img[i]
+          }
+
           projectHTML += `
-          <p class="post-author"><a href="${authors_link[i]}" target = "blank">${authors[i]}</a></p>
-          `
+                    <div class="col-6 col-sm-6 col-md-6	col-lg-6 col-xl-6">
+                      <div class = "d-flex flex-row align-content-center author-card">
+                        <img src="assets/img/${img}" alt="" class="img-fluid post-author-img flex-shrink-0">
+                        <div class="d-flex flex-column justify-content-center align-content-center">
+                          <p class="post-author">
+                            <a href="${authors_link[i]}" target = "blank" >
+                              ${authors[i]}
+                            </a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+            `
         }
-        
+
         projectHTML += `
-        
                   </div>
                   </div>
               </article>

@@ -3134,11 +3134,27 @@ section,
 }
 
 
-/* EVENTS PAGE */
+/*--------------------------------------------------------------
+# Events Page
+--------------------------------------------------------------*/
 .event-gallery {
   padding-bottom: 3rem;
 }
 
 .event-gallery img {
   padding: 1rem;
+}
+
+/*--------------------------------------------------------------
+# Projects Page
+--------------------------------------------------------------*/
+.project-card .post-meta p{
+  margin: 0;
+  padding: 0;
+}
+
+.project-card .author-card {
+  padding: 0.3rem;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
