@@ -31,8 +31,12 @@ function updateProjects(){
                   <img src="assets/img/proj/${main_image}" alt="" class="img-fluid">
                   </div>
 
-                  <p class="post-category">${content_type}</p>
-
+                  <div class = "d-flex flex-row justify-content-between">
+                    <p class="post-category">${content_type}</p>
+                    <p class="post-date">
+                        <time datetime="2022-01-01">${date}</time>
+                    </p>
+                  </div>
                   <h2 class="title">
                   <a href="./project-pages/${project_page}">${title}</a>
                   </h2>
@@ -55,12 +59,6 @@ function updateProjects(){
         <div class="post-meta">
         `
 
-        // authors.forEach(author => {
-        //   projectHTML += `
-        //   <p class="post-author"><a href="">${author}</a></p>
-        //   `
-        // })
-
         for (let i = 0; i < authors.length; i++) {
           projectHTML += `
           <p class="post-author"><a href="${authors_link[i]}" target = "blank">${authors[i]}</a></p>
@@ -68,9 +66,7 @@ function updateProjects(){
         }
         
         projectHTML += `
-        <p class="post-date">
-                      <time datetime="2022-01-01">${date}</time>
-                      </p>
+        
                   </div>
                   </div>
               </article>
