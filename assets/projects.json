@@ -1,5 +1,21 @@
 [
     {
+        "title": "Innovations in AI: New Frontiers in the Fight Against Alzheimer",
+        "main_image": "alzheimer-1.png",
+        "project_page": "ai-alzheimers.html",
+        "authors":[
+            "Alice Romaniello"
+        ],
+        "authors_img":[
+            "alice-romaniello.jpeg"
+        ],
+        "authors_link": [
+            "https://www.linkedin.com/in/alice-romaniello-0b252a254/"
+        ],
+        "date" : "March 24, 2025",
+        "content_type": "Article"
+    },
+    {
         "title": "Spatial Heterogeneity in Real Estate Markets",
         "main_image": "spatial_heterogeneity_1.jpg",
         "project_page": "spatial-heterogeneity.html",
