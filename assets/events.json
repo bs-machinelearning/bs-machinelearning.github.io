@@ -1,7 +1,7 @@
 [
     {
         "title": "Computing Power: HPC Tutorial Session",
-        "main_image": "hpc_cpu_only.png",
+        "main_image": "hpc_3.png",
         "html_page": "computing-power.html",
         "date" : "April 16, 2025"
     },
@@ -13,7 +13,7 @@
     },
     {
         "title": "Start Small But Start Something",
-        "main_image": "brightdale_2",
+        "main_image": "brightdale_2.jpg",
         "html_page": "brightdale.html",
         "date" : "November 27, 2024"
     },
