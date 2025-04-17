@@ -6,9 +6,33 @@
         "date" : "April 16, 2025"
     },
     {
-        "title": "Innovations in AI: New Frontiers in the Fight Against Alzheimer",
-        "main_image": "alzheimer-1.png",
-        "html_page": "ai-alzheimers.html",
-        "date" : "March 24, 2025"
+        "title": "AI Agents: The Next Frontier",
+        "main_image": "tomas_3.jpg",
+        "html_page": "tomas.html",
+        "date" : "February 2, 2025"
+    },
+    {
+        "title": "Start Small But Start Something",
+        "main_image": "brightdale_2",
+        "html_page": "brightdale.html",
+        "date" : "November 27, 2024"
+    },
+    {
+        "title": "AI For Decision Making",
+        "main_image": "isml_2.jpg",
+        "html_page": "isml.html",
+        "date" : "November 11, 2024"
+    },
+    {
+        "title": "Year Kick-Off",
+        "main_image": "ape2_2.jpg",
+        "html_page": "year-kickoff.html",
+        "date" : "September 26, 2024"
+    },
+    {
+        "title": "Launch Event",
+        "main_image": "ape1_1.jpg",
+        "html_page": "launch-event.html",
+        "date" : "October 12, 2023"
     }
 ]
