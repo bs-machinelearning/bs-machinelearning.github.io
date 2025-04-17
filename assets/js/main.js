@@ -136,64 +136,25 @@ function updateEvents(){
         const { 
           title,
           main_image,
-          project_page,
-          authors,
-          authors_img,
-          authors_link,
-          date,
-          content_type
+          html_page,
+          date
         } = project;
         var projectHTML = `
-            <div class="col-12 col-sm-12 col-md-6	col-lg-6 col-xl-4 project-card" data-aos="zoom-in">
-              <article>
-                  <div class="post-img">
-                    <img src="assets/img/proj/${main_image}" alt="" class="img-fluid">
-                  </div>
-
-                  <div class = "d-flex flex-row justify-content-between">
-                    <p class="post-category">${content_type}</p>
-                    <p class="post-date">
-                        <time datetime="2022-01-01">${date}</time>
-                    </p>
-                  </div>
-                  
-                  <h2 class="title">
-                    <a href="./project-pages/${project_page}">${title}</a>
-                  </h2>
-
-                  <div class = "container">
-                  <div class="post-meta row">
-        `
-
-        for (let i = 0; i < authors.length; i++) {
-        
-          if (authors_img[i] == "na") {
-            img = "black_bg.png"
-          } else {
-            img = "team/" + authors_img[i]
-          }
-
-          projectHTML += `
-                    <div class="col-6 col-sm-6 col-md-6	col-lg-6 col-xl-6">
-                      <div class = "d-flex flex-row align-content-center author-card">
-                        <img src="assets/img/${img}" alt="" class="img-fluid post-author-img flex-shrink-0">
-                        <div class="d-flex flex-column justify-content-center align-content-center">
-                          <p class="post-author">
-                            <a href="${authors_link[i]}" target = "blank" >
-                              ${authors[i]}
-                            </a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-            `
-        }
-
-        projectHTML += `
-                  </div>
-                  </div>
-              </article>
-            </div>
+          <div class="col-12 col-sm-12 col-md-6	col-lg-6 col-xl-4" data-aos="zoom-in">
+            <article>
+    
+              <div class="post-img">
+                <img src="assets/img/events/${main_image}" alt="" class="img-fluid">
+              </div>
+    
+              <p class="post-category">${date}</p>
+    
+              <h2 class="title">
+                <a href="./event-pages/${html_page}">${title}</a>
+              </h2>
+            
+            </article>
+          </div>    
         `;
         delay += 25
 
@@ -214,7 +175,9 @@ window.onload = function() {
       updateTheses();
   } else if (path.includes('projects.html')) {
       updateProjects();
-  };
+  } else if (path.includes('events.html')) {
+      updateEvents();
+};
 };
 
 (function() {
