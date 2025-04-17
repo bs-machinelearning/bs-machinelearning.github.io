@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Innovations in AI: New Frontiers in the Fight Against Alzheimer",
+        "main_image": "alzheimer-1.png",
+        "project_page": "ai-alzheimers.html",
+        "authors":[
+            "Alice Romaniello"
+        ],
+        "authors_img":[
+            "alice-romaniello.jpg"
+        ],
+        "authors_link": [
+            "https://www.linkedin.com/in/alice-romaniello-0b252a254/"
+        ],
+        "date" : "March 24, 2025",
+        "content_type": "Article"
+    },
+    {
+        "title": "Innovations in AI: New Frontiers in the Fight Against Alzheimer",
+        "main_image": "alzheimer-1.png",
+        "project_page": "ai-alzheimers.html",
+        "authors":[
+            "Alice Romaniello"
+        ],
+        "authors_img":[
+            "alice-romaniello.jpg"
+        ],
+        "authors_link": [
+            "https://www.linkedin.com/in/alice-romaniello-0b252a254/"
+        ],
+        "date" : "March 24, 2025",
+        "content_type": "Article"
+    }
+]

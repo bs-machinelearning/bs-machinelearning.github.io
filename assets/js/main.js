@@ -198,9 +198,9 @@ function updateEvents(){
         delay += 25
 
         // Append the projectHTML to the project list
-        document.getElementById('project-container').innerHTML += projectHTML;
+        document.getElementById('events-container').innerHTML += projectHTML;
       });
-    console.log('Projects updated')
+    console.log('Events updated')
     })
     .catch(error => {
       console.error('Error fetching data:', error);
