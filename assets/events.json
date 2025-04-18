@@ -2,37 +2,43 @@
     {
         "title": "Computing Power: HPC Tutorial Session",
         "main_image": "hpc_3.jpg",
-        "html_page": "computing-power.html",
+        "main_link": "./event-pages/computing-power.html",
         "date" : "April 16, 2025"
+    },
+    {
+        "title": "Milan Hackathon",
+        "main_image": "ef_1.png",
+        "main_link": "https://lu.ma/milan-ebl",
+        "date" : "March 8, 2025"
     },
     {
         "title": "AI Agents: The Next Frontier",
         "main_image": "tomas_3.jpg",
-        "html_page": "tomas.html",
+        "main_link": "./event-pages/tomas.html",
         "date" : "February 2, 2025"
     },
     {
         "title": "Start Small But Start Something",
         "main_image": "brightdale_2.jpg",
-        "html_page": "brightdale.html",
+        "main_link": "./event-pages/brightdale.html",
         "date" : "November 27, 2024"
     },
     {
         "title": "AI For Decision Making",
         "main_image": "isml_2.jpg",
-        "html_page": "isml.html",
+        "main_link": "./event-pages/isml.html",
         "date" : "November 11, 2024"
     },
     {
         "title": "Year Kick-Off",
         "main_image": "ape2_2.jpg",
-        "html_page": "year-kickoff.html",
+        "main_link": "./event-pages/year-kickoff.html",
         "date" : "September 26, 2024"
     },
     {
         "title": "Launch Event",
         "main_image": "ape1_1.jpg",
-        "html_page": "launch-event.html",
+        "main_link": "./event-pages/launch-event.html",
         "date" : "October 12, 2023"
     }
 ]
