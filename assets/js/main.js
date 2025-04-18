@@ -168,6 +168,47 @@ function updateEvents(){
     });
 };
 
+function updateHackathons(){
+  fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/hackathons.json")
+    .then(response => response.json())
+    .then(data => {
+      delay = 0
+      data.forEach(project => {
+        const { 
+          title,
+          main_image,
+          html_page,
+          date
+        } = project;
+        var projectHTML = `
+          <div class="col-12 col-sm-12 col-md-6	col-lg-6 col-xl-4" data-aos="zoom-in">
+            <article>
+    
+              <div class="post-img">
+                <img src="assets/img/events/${main_image}" alt="" class="img-fluid">
+              </div>
+    
+              <p class="post-category">${date}</p>
+    
+              <h2 class="title">
+                <a href="./hackathon-pages/${html_page}">${title}</a>
+              </h2>
+            
+            </article>
+          </div>    
+        `;
+        delay += 25
+
+        // Append the projectHTML to the project list
+        document.getElementById('hackathons-container').innerHTML += projectHTML;
+      });
+    console.log('Hackathons updated')
+    })
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
+};
+
 // if on the correct page, dynamically update list
 window.onload = function() {
   var path = window.location.pathname;
@@ -177,6 +218,8 @@ window.onload = function() {
       updateProjects();
   } else if (path.includes('events.html')) {
       updateEvents();
+  } else if (path.includes('hackathons.html')) {
+      updateHackathons();
 };
 };
 

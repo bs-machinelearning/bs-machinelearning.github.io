@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Milan Hackathon",
+        "main_image": "ef_1.png",
+        "html_page": "milan-hackathon.html",
+        "date" : "March 8-9, 2025"
+    },
+    {
+        "title": "Escape The Challenge",
+        "main_image": "bcg_1.jpg",
+        "html_page": "escape-the-challenge.html",
+        "date" : "February 20 - May 16, 2025"
+    }
+]
