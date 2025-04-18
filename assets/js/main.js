@@ -150,7 +150,7 @@ function updateEvents(){
               <p class="post-category">${date}</p>
     
               <h2 class="title">
-                <a href="${html_page}">${title}</a>
+                <a href="./event-pages/${html_page}">${title}</a>
               </h2>
             
             </article>
