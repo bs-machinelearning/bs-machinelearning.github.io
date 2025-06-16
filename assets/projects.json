@@ -1,5 +1,24 @@
 [
     {
+        "title": "Do AI and Human Experts See Pneumonia the Same Way?",
+        "main_image": "pneumonia.png",
+        "project_page": "pneumonia.html",
+        "authors":[
+            "Giacomo Cirò",
+            "Davide Beltrame"
+        ],
+        "authors_img":[
+            "jack.jpg",
+            "goat.jpg"
+        ],
+        "authors_link": [
+            "https://www.linkedin.com/in/giacomo-ciro/",
+            "https://www.linkedin.com/in/davide-beltrame/"
+        ],
+        "date" : "June 16, 2025",
+        "content_type": "Article"
+    },
+    {
         "title": "Innovations in AI: New Frontiers in the Fight Against Alzheimer",
         "main_image": "alzheimer-1.png",
         "project_page": "ai-alzheimers.html",
