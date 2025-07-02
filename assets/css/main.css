@@ -242,7 +242,7 @@ h6 {
   font-size: 32px;
   font-weight: 300;
   margin: 0;
-  color: var(--heading-color);
+  color: var(--accent-color);
 }
 
 .header .logo span {
@@ -254,7 +254,7 @@ h6 {
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus{
-  color: var(--contrast-color);
+  color: var(--default-color);
   background: var(--accent-color);
   font-size: 14px;
   padding: 8px 26px;
@@ -744,7 +744,7 @@ h6 {
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--contrast-color);
+  color: var(--default-color);
   line-height: 0;
 }
 
@@ -1304,7 +1304,7 @@ section,
   display: -nline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--contrast-color);
+  color: var(--default-color);
   background: var(--accent-color);
 }
 
