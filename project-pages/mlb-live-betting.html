@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>BSML | Learning to Bet: Reinforcement Learning for Live Wagering in Major League Baseball</title>
+    <meta content="This project explores the use of reinforcement learning to optimize live sports wagering strategies in Major League Baseball." name="description">
+    <meta content="reinforcement learning, machine learning, sports betting, MLB, baseball, live wagering" name="keywords">
+  
+    <!-- Open Graph meta tags for better link previews -->
+    <meta property="og:title" content="BSML | Learning to Bet: Reinforcement Learning for Live Wagering in Major League Baseball">
+    <meta property="og:description" content="This project explores the use of reinforcement learning to optimize live sports wagering strategies in Major League Baseball.">
+    <meta property="og:image" content="https://bsmachinelearning.com/assets/img/white_bg.png">
+    <meta property="og:url" content="https://bsmachinelearning.com/project-pages/mlb-live-betting.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicons -->
+    <link href="../assets/img/white_bg.png" rel="icon">
+    <link href="../assets/img/white_bg.png" rel="apple-touch-icon">
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+    <!-- Main CSS -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="blog-details-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+    
+          <a href="../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+            <h1 class="sitename">BSML</h1>
+          </a>
+    
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="../index.html#home">Home<br></a></li>
+              <li><a href="../index.html#about">About</a></li>
+              <li><a href="../index.html#faq">FAQ</a></li>
+              <li><a href="../index.html#team">Founders</a></li>
+              <li><a href="../projects.html" class="active">Projects</a></li>
+              <li><a href="../events.html">Events</a></li>
+              <li><a href="../hackathons.html">Hackathons</a></li>
+              <li><a href="../theses.html">Theses Repo</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+    
+          <a class="btn-getstarted" href="../index.html#open-roles">JOIN US</a>
+    
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="d-flex justify-content-center align-items-center flex-column">
+
+            <div class="col-lg-8">
+
+                <!-- Blog Details Section -->
+                <section id="blog-details" class="blog-details section">
+                    <div class="container">
+
+                    <article class="article">
+
+                        <div class="post-img">
+                            <img src="../assets/img/proj/mlb-betting.jpg" alt="" class="img-fluid mx-auto d-block" style="max-width: 45%; height: auto;">
+                        </div>
+                        <h2 class="title">Learning to Bet: Reinforcement Learning for Live Wagering in Major League Baseball</h2>
+
+                        <div class="meta-top">
+                        <ul>
+                            <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="https://www.linkedin.com/in/redi-aliço/">Redi Aliço</a></li>
+                            <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="https://www.linkedin.com/in/sean-conlon-663b2511b/">Sean Brindley Conlon</a></li>
+                            <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="https://www.linkedin.com/in/shervin-jahanbakhsh-7b0527313//">Shervin Jahanbakhsh</a></li>
+                            <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="https://www.linkedin.com/in/uifaleanstefan/">Stefan Uifalean</a></li>
+                            <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <time datetime="2025-05-25">July 16, 2025</time></li>
+                        </ul>
+                        </div><!-- End meta top -->
+
+                        <div class="content">
+                            <p>
+                                This project investigates how reinforcement learning (RL) algorithms can optimize betting strategies in Major League Baseball (MLB) <strong>live wagering</strong>. Traditional sports betting models focus on pre-game predictions, but live betting introduces unique complexities—and opportunities—by allowing dynamic, strategic decision-making throughout a game.
+                            </p>
+
+                            <p>
+                                Using historical MLB play-by-play data spanning 25 years (2000–2024) and bookmaker odds from recent seasons, the team created a realistic environment simulating the <strong>sequential decision-making process</strong> faced by bettors. Due to sparse historical odds data, they built an <strong>ensemble regression model</strong> (combining XGBoost, LightGBM, and Random Forest) to predict missing live odds with high accuracy (MAE = 0.04).
+                            </p>
+
+                            <p>
+                                They evaluated four prominent RL algorithms—A2C, PPO, TRPO, and DSAC—under different behavioral variants and reward shaping conditions. <strong>PPO with reward shaping</strong> emerged as the standout model, achieving positive returns in simulation but facing challenges generalizing fully to real-world bookmaker odds.
+                            </p>
+
+                            <p>
+                                The findings emphasize the potential—and limitations—of reinforcement learning in dynamic financial markets like sports betting, highlighting critical areas such as market inefficiencies and bookmaker advantages. Future work will focus on enhancing <strong>simulation realism</strong> and improving generalization to real-world scenarios.
+                            </p>
+
+                            <div class="d-flex align-items-center justify-content-around mt-4">
+                                <a href="../assets/reports/BSML_MLB_Live_Betting.pdf" target="_blank" class="btn-chatbot">Report</a>
+                                <a href="https://github.com/UifaleanStefan/MLBLiveBetting/tree/main" target="_blank" class="btn-chatbot">Code</a>
+                            </div>
+                        </div>
+                        <!-- End post content -->
+
+                        <div class="meta-bottom">
+                        </div>
+                        <!-- End meta bottom -->
+
+                    </article>
+
+                    </div>
+                </section><!-- /Blog Details Section -->
+
+                <!-- Blog Author Section -->
+                <section id="blog-author" class="blog-author section">
+
+                    <div class="container">
+                        <div class="author-container d-flex align-items-center">
+                            <img src="../assets/img/team/redi-aliço.jpg" class="rounded-circle flex-shrink-0" alt="">
+                            <div>
+                            <h4>Redi Aliço</h4>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/redi-aliço/"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <p>
+                                MSc in Artificial Intelligence at Bocconi University.
+                            </p>
+                            </div>
+                        </div>
+                        
+                        <div class="author-container d-flex align-items-center">
+                            <img src="../assets/img/team/sean-conlon.jpg" class="rounded-circle flex-shrink-0" alt="">
+                            <div>
+                            <h4>Sean Brindley Conlon</h4>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/sean-conlon-663b2511b/"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <p>
+                                MSc in Artificial Intelligence at Bocconi University.
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="author-container d-flex align-items-center">
+                            <img src="../assets/img/team/placeholder.png" class="rounded-circle flex-shrink-0" alt="">
+                            <div>
+                            <h4>Shervin Jahanbakhsh</h4>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/shervin-jahanbakhsh-7b0527313//"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <p>
+                                MSc in Artificial Intelligence at Bocconi University.
+                            </p>
+                            </div>
+                        </div>
+
+                        <div class="author-container d-flex align-items-center">
+                            <img src="../assets/img/team/stefan-uifalean.jpg" class="rounded-circle flex-shrink-0" alt="">
+                            <div>
+                            <h4>Stefan Uifalean</h4>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/uifaleanstefan/"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <p>
+                                MSc in Artificial Intelligence at Bocconi University.
+                            </p>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                </section><!-- /Blog Author Section -->
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

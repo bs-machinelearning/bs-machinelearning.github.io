@@ -1,5 +1,30 @@
 [
     {
+        "title": "Learning to Bet: Reinforcement Learning for Live Wagering in Major League Baseball",
+        "main_image": "mlb-betting.jpg",
+        "project_page": "mlb-live-betting.html",
+        "authors":[
+            "Redi Aliço",
+            "Sean Brindley Conlon",
+            "Shervin Jahanbakhsh",
+            "Stefan Uifalean"
+        ],
+        "authors_img":[
+            "redi-aliço.jpg",
+            "sean-conlon.jpg",
+            "placeholder.png",
+            "stefan-uifalean.jpg"
+        ],
+        "authors_link": [
+            "https://www.linkedin.com/in/redi-aliço/",
+            "https://www.linkedin.com/in/sean-conlon-663b2511b/",
+            "https://www.linkedin.com/in/shervin-jahanbakhsh-7b0527313/",
+            "https://www.linkedin.com/in/uifaleanstefan/"
+        ],
+        "date" : "July 16, 2025",
+        "content_type": "Research"
+    },
+    {
         "title": "Do AI and Human Experts See Pneumonia the Same Way?",
         "main_image": "pneumonia.png",
         "project_page": "pneumonia.html",
