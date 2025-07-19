@@ -1,6 +1,11 @@
+// const BRANCH_NAME="refactor/automate-page-creation/";
+const BRANCH_NAME="main";
+const PATH_TO_ROOT = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ? 
+  window.location.origin : `https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/${BRANCH_NAME}`;
+
 //-----------------FOOTER
 function includeFooter() {
-  fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/footer.html")
+  fetch(`${PATH_TO_ROOT}/assets/templates/footer.html`)
       .then(response => response.text())
       .then(data => {
           document.getElementById('footer').innerHTML = data;
@@ -8,89 +13,59 @@ function includeFooter() {
       });
 };
 
-function updateProjects(){
-  fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/projects.json")
-    .then(response => response.json())
-    .then(data => {
-      delay = 0
-      data.forEach(project => {
-        const { 
-          title,
-          main_image,
-          project_page,
-          authors,
-          authors_img,
-          authors_link,
-          date,
-          content_type
-        } = project;
-        var projectHTML = `
-            <div class="col-12 col-sm-12 col-md-6	col-lg-6 col-xl-4 project-card" data-aos="zoom-in">
-              <article>
-                  <div class="post-img">
-                    <img src="assets/img/proj/${main_image}" alt="" class="img-fluid">
-                  </div>
+function updateProjects() {
+  Promise.all([
+    fetch(`${PATH_TO_ROOT}/assets/templates/project-card.html`).then(res => res.text()),
+    fetch(`${PATH_TO_ROOT}/assets/projects.json`).then(res => res.json())
+  ])
+  .then(([templateHTML, projects]) => {
+    const container = document.getElementById('project-container');
 
-                  <div class = "d-flex flex-row justify-content-between">
-                    <p class="post-category">${content_type}</p>
-                    <p class="post-date">
-                        <time datetime="2022-01-01">${date}</time>
-                    </p>
-                  </div>
-                  
-                  <h2 class="title">
-                    <a href="./project-pages/${project_page}">${title}</a>
-                  </h2>
+    projects.forEach(project => {
+      // Create a DOM element from template
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = templateHTML.trim();
+      const entry = tempDiv.firstElementChild;
 
-                  <div class = "container">
-                  <div class="post-meta row">
-        `
+      // Fill in project fields
+      entry.querySelector('#project-image').src = `assets/img/proj/${project.image}`;
+      entry.querySelector('#project-image').alt = project.title;
+      entry.querySelector('#project-type').textContent = project.type || project.content_type || '';
+      entry.querySelector('#project-date').textContent = project.date;
+      entry.querySelector('#project-date').setAttribute('datetime', project.date);
+      entry.querySelector('#project-link').href = `./assets/templates/project-page.html?id=${project.id}`;
+      entry.querySelector('#project-link').textContent = project.title.includes(':') ? project.title.split(':')[0] : project.title;
 
-        for (let i = 0; i < authors.length; i++) {
-        
-          if (authors_img[i] == "na") {
-            img = "black_bg.png"
-          } else {
-            img = "team/" + authors_img[i]
-          }
+      // Authors
+      const authorsDiv = entry.querySelector('#project-authors');
+      const authorTemplate = authorsDiv.querySelector('.author-template'); // get template first
+      authorsDiv.innerHTML = ''; // then clear
 
-          projectHTML += `
-                    <div class="col-6 col-sm-6 col-md-6	col-lg-6 col-xl-6">
-                      <div class = "d-flex flex-row align-content-center author-card">
-                        <img src="assets/img/${img}" alt="" class="img-fluid post-author-img flex-shrink-0">
-                        <div class="d-flex flex-column justify-content-center align-content-center">
-                          <p class="post-author">
-                            <a href="${authors_link[i]}" target = "blank" >
-                              ${authors[i]}
-                            </a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-            `
-        }
+      if (project.authors && Array.isArray(project.authors)) {
+        project.authors.forEach(author => {
+          const authorNode = authorTemplate.cloneNode(true);
+          authorNode.style.display = ''; // Show the cloned node
+          authorNode.querySelector('.author-img').src = `assets/img/team/${author.img}`;
+          authorNode.querySelector('.author-img').alt = author.name;
+          authorNode.querySelector('.author-link').href = author.link;
+          authorNode.querySelector('.author-link').textContent = author.name;
+          authorsDiv.appendChild(authorNode);
+        });
+      }
 
-        projectHTML += `
-                  </div>
-                  </div>
-              </article>
-            </div>
-        `;
-        delay += 25
-
-        // Append the projectHTML to the project list
-        document.getElementById('project-container').innerHTML += projectHTML;
-      });
-    console.log('Projects updated')
-    })
-    .catch(error => {
-      console.error('Error fetching data:', error);
+      // Append to container
+      container.appendChild(entry);
     });
+    console.log('Projects updated');
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
 };
 
 
 function updateTheses(){
-  fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/theses.json")
+  fetch(`${PATH_TO_ROOT}/assets/theses.json`)
     .then(response => response.json())
     .then(data => {
       delay = 0
@@ -119,7 +94,7 @@ function updateTheses(){
 
         // Append the projectHTML to the project list
         document.getElementById('theses-container').innerHTML += thesisHTML;
-        console.log('Thesis list updated from https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/theses.json')
+        console.log('Thesis list updated')
       });
     })
     .catch(error => {
@@ -128,7 +103,7 @@ function updateTheses(){
 };
 
 function updateEvents(){
-  fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/events.json")
+  fetch(`${PATH_TO_ROOT}/assets/events.json`)
     .then(response => response.json())
     .then(data => {
       delay = 0
@@ -140,7 +115,7 @@ function updateEvents(){
           date
         } = project;
         var projectHTML = `
-          <div class="col-12 col-sm-12 col-md-6	col-lg-6 col-xl-4" data-aos="zoom-in">
+          <div class="blog-post col-12 col-sm-12 col-md-6	col-lg-6 col-xl-4" data-aos="zoom-in">
             <article>
     
               <div class="post-img">
@@ -169,7 +144,7 @@ function updateEvents(){
 };
 
 function updateHackathons(){
-  fetch("https://raw.githubusercontent.com/bs-machinelearning/bs-machinelearning.github.io/refs/heads/main/assets/hackathons.json")
+  fetch(`${PATH_TO_ROOT}/assets/hackathons.json`)
     .then(response => response.json())
     .then(data => {
       delay = 0
@@ -181,7 +156,7 @@ function updateHackathons(){
           date
         } = project;
         var projectHTML = `
-          <div class="col-12 col-sm-12 col-md-6	col-lg-6 col-xl-4" data-aos="zoom-in">
+          <div class="blog-post col-12 col-sm-12 col-md-6	col-lg-6 col-xl-4" data-aos="zoom-in">
             <article>
     
               <div class="post-img">
@@ -209,10 +184,102 @@ function updateHackathons(){
     });
 };
 
-// if on the correct page, dynamically update list
+function updateProjectPage() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const projectId = urlParams.get('id');
+  if (!projectId) return;
+
+  Promise.all([
+    fetch(`${PATH_TO_ROOT}/assets/projects.json`).then(res => res.json()),
+    fetch(`${PATH_TO_ROOT}/project-pages/${projectId}.md`)
+      .then(res => {
+        if (!res.ok) {
+          // Custom error message for missing markdown file
+          return null;
+        }
+        return res.text();
+      })
+  ])
+  .then(([projects, markdownContent]) => {
+    const project = projects.find(p => p.id === projectId);
+    if (!project) {
+      document.body.innerHTML = '<h2>Project not found.</h2>';
+      return;
+    }
+    // Set project title and date
+    document.getElementById('project-title').textContent = project.title;
+    document.getElementById('page-meta-title').textContent = `BSML | ${project.title}`;
+    document.getElementById('project-date').textContent = project.date;
+    document.getElementById('project-date').setAttribute('datetime', project.date);
+
+    // Inject markdown content or custom error
+    const mainContent = document.getElementById('main-content');
+    if (mainContent) {
+      if (markdownContent === null) {
+      // Do nothing
+      } else {
+      mainContent.innerHTML += marked.parse(markdownContent);
+      }
+    }
+    
+    // Authors list (top)
+    const authorsList = document.getElementById('authors-list');
+    const authorTemplate = authorsList.querySelector('.author-template');
+    project.authors.forEach(author => {
+      const node = authorTemplate.cloneNode(true);
+      node.style.display = '';
+      const link = node.querySelector('.author-link');
+      link.href = author.link;
+      link.textContent = author.name;
+      authorsList.insertBefore(node, authorTemplate.nextSibling);
+    });
+    authorTemplate.remove();
+
+    // Author profiles (bottom)
+    const authorContainer = document.getElementById('author-container');
+    const profileTemplate = authorContainer.querySelector('.author-profile-template');
+    project.authors.forEach(author => {
+      const profile = profileTemplate.cloneNode(true);
+      profile.style.display = '';
+      profile.querySelector('.author-img').src = `../img/team/${author.img}`;
+      profile.querySelector('.author-img').alt = author.name;
+      profile.querySelector('.author-name').textContent = author.name;
+      profile.querySelector('.author-link').href = author.link;
+      profile.querySelector('.author-desc').textContent = author.title;
+      authorContainer.appendChild(profile);
+    });
+    profileTemplate.remove();
+
+    // Buttons
+    const buttonsDiv = document.getElementById('main-buttons');
+    const buttonTemplate = buttonsDiv.querySelector('.button-template');
+    project.buttons.forEach(btn => {
+      const btnNode = buttonTemplate.cloneNode(true);
+      btnNode.style.display = '';
+      btnNode.href = btn.link;
+      btnNode.textContent = btn.name;
+      buttonsDiv.appendChild(btnNode);
+    });
+    buttonTemplate.remove();
+
+    // Set project image
+    const postImg = document.querySelector('.post-img img');
+    if (postImg) {
+      postImg.src = `../img/proj/${project.image}`;
+      postImg.alt = project.title;
+    }
+  })
+  .catch(error => {
+    document.body.innerHTML = `<h2>Error loading project: ${error}</h2>`;
+  });
+}
+
+// Call this function if on project-page.html
 window.onload = function() {
   var path = window.location.pathname;
-  if (path.includes('theses.html')) {
+  if (path.includes('project-page.html')) {
+    updateProjectPage();
+  } else if (path.includes('theses.html')) {
       updateTheses();
   } else if (path.includes('projects.html')) {
       updateProjects();
@@ -319,16 +386,6 @@ window.onload = function() {
   }
   window.addEventListener('load', aosInit);
 
-  /**
-   * Initiate glightbox
-   */
-  // const glightbox = GLightbox({
-  //   selector: '.glightbox'
-  // });
-
-  /**
-   * Init swiper sliders
-   */
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
       let config = JSON.parse(
