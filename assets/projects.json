@@ -1,176 +1,243 @@
 [
     {
         "title": "Learning to Bet: Reinforcement Learning for Live Wagering in Major League Baseball",
-        "main_image": "mlb-betting.jpg",
-        "project_page": "mlb-live-betting.html",
-        "authors":[
-            "Redi Aliço",
-            "Sean Brindley Conlon",
-            "Shervin Jahanbakhsh",
-            "Stefan Uifalean"
+        "image": "mlb-betting.jpg",
+        "authors": [
+            {
+                "name": "Redi Aliço",
+                "img": "redi-alico.jpg",
+                "link": "https://www.linkedin.com/in/redi-aliço/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
+            },
+            {
+                "name": "Sean Brindley Conlon",
+                "img": "sean-conlon.jpg",
+                "link": "https://www.linkedin.com/in/sean-conlon-663b2511b/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
+            },
+            {
+                "name": "Shervin Jahanbakhsh",
+                "img": "placeholder.png",
+                "link": "https://www.linkedin.com/in/shervin-jahanbakhsh-7b0527313/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
+            },
+            {
+                "name": "Stefan Uifalean",
+                "img": "stefan-uifalean.jpg",
+                "link": "https://www.linkedin.com/in/uifaleanstefan/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
+            }
         ],
-        "authors_img":[
-            "redi-alico.jpg",
-            "sean-conlon.jpg",
-            "placeholder.png",
-            "stefan-uifalean.jpg"
+        "buttons": [
+            {
+                "name": "Report",
+                "link": "https://bsmachinelearning.com/assets/reports/BSML_MLB_Live_Betting.pdf"
+            },
+            {
+                "name": "Code",
+                "link": "https://github.com/UifaleanStefan/MLBLiveBetting/tree/main"
+            }
         ],
-        "authors_link": [
-            "https://www.linkedin.com/in/redi-aliço/",
-            "https://www.linkedin.com/in/sean-conlon-663b2511b/",
-            "https://www.linkedin.com/in/shervin-jahanbakhsh-7b0527313/",
-            "https://www.linkedin.com/in/uifaleanstefan/"
-        ],
-        "date" : "July 16, 2025",
-        "content_type": "Research"
+        "date": "July 16, 2025",
+        "content_type": "Research",
+        "id": "250716"
     },
     {
         "title": "Do AI and Human Experts See Pneumonia the Same Way?",
-        "main_image": "pneumonia.png",
-        "project_page": "pneumonia.html",
-        "authors":[
-            "Giacomo Cirò",
-            "Davide Beltrame"
+        "image": "pneumonia.png",
+        "authors": [
+            {
+                "name": "Giacomo Cirò",
+                "img": "jack.jpg",
+                "link": "https://www.linkedin.com/in/giacomo-ciro/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
+            },
+            {
+                "name": "Davide Beltrame",
+                "img": "goat.jpg",
+                "link": "https://www.linkedin.com/in/davide-beltrame/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
+            }
         ],
-        "authors_img":[
-            "jack.jpg",
-            "goat.jpg"
+        "buttons": [
+            {
+                "name": "Report",
+                "link": "https://bsmachinelearning.com/assets/reports/do_ai_and_human_experts_see_pneumonia_the_same_way.pdf"
+            },
+            {
+                "name": "Code",
+                "link": "https://github.com/davide-beltrame/medimg-saliency-benchmark"
+            }
         ],
-        "authors_link": [
-            "https://www.linkedin.com/in/giacomo-ciro/",
-            "https://www.linkedin.com/in/davide-beltrame/"
-        ],
-        "date" : "June 16, 2025",
-        "content_type": "Research"
+        "date": "June 16, 2025",
+        "content_type": "Research",
+        "id": "250616"
     },
     {
-        "title": "Innovations in AI: New Frontiers in the Fight Against Alzheimer",
-        "main_image": "alzheimer-1.png",
-        "project_page": "ai-alzheimers.html",
-        "authors":[
-            "Alice Romaniello"
+        "title": "New Frontiers in the Fight Against Alzheimer",
+        "image": "alzheimer-1.png",
+        "authors": [
+            {
+                "name": "Alice Romaniello",
+                "img": "alice-romaniello.jpg",
+                "link": "https://www.linkedin.com/in/alice-romaniello-0b252a254/",
+                "title": "BSc Mathematics and Computer Science for Artificial Intelligence at Bocconi University"
+            }
         ],
-        "authors_img":[
-            "alice-romaniello.jpg"
-        ],
-        "authors_link": [
-            "https://www.linkedin.com/in/alice-romaniello-0b252a254/"
-        ],
-        "date" : "March 24, 2025",
-        "content_type": "Article"
+        "buttons": [],
+        "date": "March 24, 2025",
+        "content_type": "Article",
+        "id": "250324"
     },
     {
         "title": "Spatial Heterogeneity in Real Estate Markets",
-        "main_image": "spatial_heterogeneity_1.jpg",
-        "project_page": "spatial-heterogeneity.html",
-        "authors":[
-            "Marco Lomele",
-            "Giovanni Mantovani",
-            "Letizia Dimonopoli",
-            "Sofia Villa"
+        "image": "spatial_heterogeneity_1.jpg",
+        "authors": [
+            {
+                "name": "Marco Lomele",
+                "img": "mrml.jpeg",
+                "link": "https://www.linkedin.com/in/marco-lomele/",
+                "title": "MSc in Data Science and Business Analytics at Bocconi University"
+            },
+            {
+                "name": "Giovanni Mantovani",
+                "img": "giovanni-mantovani.jpg",
+                "link": "https://www.linkedin.com/in/giovanni-mantovani-21102821b/",
+                "title": "MSc in Data Science and Business Analytics at Bocconi University"
+            },
+            {
+                "name": "Letizia Dimonopoli",
+                "img": "letizia-dimonopoli.jpg",
+                "link": "https://www.linkedin.com/in/letiziadimonopoli/",
+                "title": "MSc in Data Science and Business Analytics at Bocconi University"
+            },
+            {
+                "name": "Sofia Villa",
+                "img": "sofia-villa.jpg",
+                "link": "https://www.linkedin.com/in/sofiavilla/",
+                "title": "MSc in Data Science and Business Analytics at Bocconi University"
+            }
         ],
-        "authors_img":[
-            "mrml.jpeg",
-            "giovanni-mantovani.jpg",
-            "letizia-dimonopoli.jpg",
-            "sofia-villa.jpg"
+        "buttons": [
+            {
+                "name": "Report",
+                "link": "https://bsmachinelearning.com/assets/reports/spatial_heterogeneity.pdf"
+            }
         ],
-        "authors_link": [
-            "https://www.linkedin.com/in/marco-lomele/",
-            "https://www.linkedin.com/in/giovanni-mantovani-21102821b/",
-            "https://www.linkedin.com/in/letiziadimonopoli/",
-            "https://www.linkedin.com/in/sofiavilla/"
-        ],
-        "date" : "March 2, 2025",
-        "content_type": "Research"
+        "date": "March 2, 2025",
+        "content_type": "Research",
+        "id": "250302"
     },
     {
         "title": "Roof Segmentation for Solar Energy Estimation",
-        "main_image": "solar-energy-estimation-2.png",
-        "project_page": "solar-energy-estimation.html",
-        "authors":[
-            "Byran Bisetti",
-            "Andrea Duico",
-            "Filip Juren"
+        "image": "solar-energy-estimation-2.png",
+        "authors": [
+            {
+                "name": "Byran Bisetti",
+                "img": "bryan.jpg",
+                "link": "https://www.linkedin.com/in/bryan-bisetti/",
+                "title": "MSc in Data Science and Business Analytics at Bocconi University"
+            },
+            {
+                "name": "Andrea Duico",
+                "img": "andrea-duico.jpg",
+                "link": "https://www.linkedin.com/in/andreaduico/",
+                "title": "MSc in Data Science and Business Analytics at Bocconi University"
+            },
+            {
+                "name": "Filip Juren",
+                "img": "filip-juren.jpg",
+                "link": "https://www.linkedin.com/in/filipjuren/",
+                "title": "MSc in Data Science and Business Analytics at Bocconi University"
+            }
         ],
-        "authors_img":[
-            "bryan.jpg",
-            "andrea-duico.jpg",
-            "filip-juren.jpg"
+        "buttons": [
+            {
+                "name": "Report",
+                "link": "https://bsmachinelearning.com/assets/reports/solar-energy-estimation.pdf"
+            },
+            {
+                "name": "Code",
+                "link": "https://github.com/bryanbisetti/solar_panels"
+            }
         ],
-        "authors_link": [
-            "https://www.linkedin.com/in/bryan-bisetti/",
-            "https://www.linkedin.com/in/andreaduico/",
-            "https://www.linkedin.com/in/filipjuren/"
-        ],
-        "date" : "February 23, 2025",
-        "content_type": "Research"
+        "date": "February 23, 2025",
+        "content_type": "Research",
+        "id": "250223"
     },
     {
         "title": "Bocconi Chatbot",
-        "main_image": "proj-3.png",
-        "project_page": "bocconi-chatbot.html",
-        "authors":[
-            "Valerio Di Palo"
+        "image": "proj-3.png",
+        "authors": [
+            {
+                "name": "Valerio Di Palo",
+                "img": "valerio-dipalo.jpeg",
+                "link": "https://www.linkedin.com/in/valedipalo/",
+                "title": "MSc in Data Science and Business Analytics at Bocconi University"
+            }
         ],
-        "authors_img":[
-            "valerio-dipalo.jpeg"
+        "buttons": [
+            {
+                "name": "Chat",
+                "link": "https://t.me/bocconi_faq_chatbot"
+            }
         ],
-        "authors_link": [
-            "https://www.linkedin.com/in/valedipalo/"
-        ],
-        "date" : "March 3, 2024",
-        "content_type": "Implementation"
+        "date": "March 3, 2024",
+        "content_type": "Implementation",
+        "id": "240303"
     },
     {
         "title": "Reinforcement Learning: How to Train Your Machine",
-        "main_image": "proj-2.jpg",
-        "project_page": "reinforcement-learning.html",
-        "authors":[
-            "Ledio Duda"
+        "image": "proj-2.jpg",
+        "authors": [
+            {
+                "name": "Ledio Duda",
+                "img": "ledio-duda.png",
+                "link": "https://www.linkedin.com/in/ledio-duda/",
+                "title": "BSc in Economics, Management and Computer Science at Bocconi University"
+            }
         ],
-        "authors_img":[
-            "ledio-duda.png"
-        ],
-        "authors_link": [
-            "https://www.linkedin.com/in/ledio-duda/"
-        ],
-        "date" : "Feb 19, 2024",
-        "content_type": "Article"
+        "buttons": [],
+        "date": "Feb 19, 2024",
+        "content_type": "Article",
+        "id": "240219"
     },
     {
         "title": "Digital Symbiosis: How Machines Learn From The Human Mind",
-        "main_image": "proj-1.jpg",
-        "project_page": "ditigal-symbiosis.html",
-        "authors":[
-            "Marco Beltramin"
+        "image": "proj-1.jpg",
+        "authors": [
+            {
+                "name": "Marco Beltramin",
+                "img": "marco-beltramin.png",
+                "link": "https://www.linkedin.com/in/marco-beltramin-811b74298/",
+                "title": "MSc in Finance at Bocconi University"
+            }
         ],
-        "authors_img":[
-            "marco-beltramin.png"
-        ],
-        "authors_link": [
-            "https://www.linkedin.com/in/marco-beltramin-811b74298/"
-        ],
-        "date" : "Jan 28, 2024",
-        "content_type": "Article"
+        "buttons": [],
+        "date": "Jan 28, 2024",
+        "content_type": "Article",
+        "id": "240128"
     },
     {
         "title": "Missing Knowledge Links",
-        "main_image": "proj-4.jpg",
-        "project_page": "missing-knowledge-links.html",
-        "authors":[
-            "Giulio Caputi",
-            "Francesco Braicovich"
+        "image": "proj-4.jpg",
+        "authors": [
+            {
+                "name": "Giulio Caputi",
+                "img": "cap.jpg",
+                "link": "https://www.linkedin.com/in/giulio-caputi/",
+                "title": "BSc in Economics, Management and Computer Science at Bocconi University"
+            },
+            {
+                "name": "Francesco Braicovich",
+                "img": "braicovich.jpeg",
+                "link": "https://www.linkedin.com/in/francescobraicovich/",
+                "title": "BSc Mathematics and Computer Science for Artificial Intelligence at Bocconi University"
+            }
         ],
-        "authors_img":[
-            "cap.jpg",
-            "braicovich.jpeg"
-        ],
-        "authors_link": [
-            "https://www.linkedin.com/in/giulio-caputi/",
-            "https://www.linkedin.com/in/francescobraicovich/"
-        ],
-        "date" : "January 19, 2024",
-        "content_type": "Research"
+        "buttons": [],
+        "date": "January 19, 2024",
+        "content_type": "Research",
+        "id": "240119"
     }
 ]

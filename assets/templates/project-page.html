@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title id="page-meta-title"></title>
+
+    <!-- Favicons -->
+    <link href="../img/white_bg.png" rel="icon">
+    <link href="../img/white_bg.png" rel="apple-touch-icon">
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+    <!-- Main CSS -->
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+
+<body class="blog-details-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+    
+          <a href="../../index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+            <h1 class="sitename">BSML</h1>
+          </a>
+    
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="../../index.html#home">Home<br></a></li>
+              <li><a href="../../index.html#about">About</a></li>
+              <li><a href="../../index.html#faq">FAQ</a></li>
+              <li><a href="../../index.html#team">Founders</a></li>
+              <li><a href="../../projects.html" class="active">Projects</a></li>
+              <li><a href="../../events.html">Events</a></li>
+              <li><a href="../../hackathons.html">Hackathons</a></li>
+              <li><a href="../../theses.html">Theses Repo</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+    
+          <a class="btn-joinus" href="../../index.html#open-roles">JOIN US</a>
+    
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="d-flex justify-content-center align-items-center flex-column">
+
+            <div class="col-lg-8">
+
+                <!-- Blog Details Section -->
+                <section id="blog-details" class="blog-details section">
+                    <div class="container">
+
+                    <article class="article">
+
+                        <div class="post-img">
+                            <img src="path/to/post-img" alt="">
+                        </div>
+                        <h2 id="project-title" class="title">Project Title</h2>
+
+                        <div id="author-names-date" class="meta-top d-flex flex-column">
+                            <div class="d-flex align-items-center mb-2 justify-content-center">
+                                <i class="bi bi-clock"></i>
+                                <time id="project-date" datetime="" class="ms-1">Date</time>
+                            </div>
+                            <ul id="authors-list" class="list-unstyled d-flex align-items-center justify-content-center">
+                                <li class="author-template d-flex align-items-center justify-content-center" style="display:none;">
+                                    <i class="bi bi-person"></i>
+                                    <a class="author-link ms-1" href="link/to/author">Author Name</a>
+                                </li>
+                                <!-- Authors will be injected here -->
+                            </ul>
+                        </div><!-- End meta top -->
+
+                        <div id="main-content" class="content">
+
+                        </div>
+                        <div id="main-buttons" class="d-flex align-items-center justify-content-around mt-4">
+                            <a class="button-template btn-chatbot" href="#" target="_blank" style="display:none;">Button Name</a>
+                            <!-- Buttons will be injected here -->
+                        </div>
+                        <!-- End post content -->
+
+                        <div class="meta-bottom">
+                        </div>
+                        <!-- End meta bottom -->
+
+                    </article>
+
+                    </div>
+                </section><!-- /Blog Details Section -->
+
+                <!-- Blog Author Section -->
+                <section id="project-author" class="project-author section">
+
+                    <div class="container">
+                      <div id="author-container" class="author-container d-flex align-items-center justify-content-center">
+                        <div class="author-profile-template" style="display:none;">
+                          <img class="author-img rounded-circle flex-shrink-0" src="path/to/author-img" alt="">
+                          <div>
+                            <h4 class="author-name">Author 1</h4>
+                            <div class="social-links">
+                              <a class="author-link" href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <p class="author-desc">Author Description</p>
+                          </div>
+                        </div>
+                        <!-- Author profiles will be injected here -->
+                      </div>
+                    </div>
+
+                </section><!-- /Blog Author Section -->
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Marked.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
