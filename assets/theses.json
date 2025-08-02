@@ -1,5 +1,13 @@
 [
     {
+        "title": "Integrating Single-Cell RNAseq and Graph Neural Networks to Predict TP53 Mutation Status",
+        "course": "BEMACS '25",
+        "author": "Tommaso Ravasio",
+        "supervisor": "Prof. Francesca Buffa",
+        "thesis_link": "./assets/theses/tommaso_ravasio_bemacs_25.pdf",
+        "author_link": "https://www.linkedin.com/in/tommasoravasio/"
+    },
+    {
         "title": "Graph Neural Networks: From Foundations to Temporal Applications",
         "course": "BEMACS '24",
         "author": "Marco Lomele",
