@@ -1843,3 +1843,96 @@ section,
   margin-top: 0.5rem;
   font-style: italic;
 }
+
+/* -------------- */
+/* Start of stuff for transfer learning page */
+.highlight-link {
+  color: #9f38e9; 
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* keep it purple during click/keyboard focus and once opened */
+.box-title-btn:active,
+.box-title-btn:hover,
+.box-title-btn:focus,
+.box-title-btn:focus-visible,
+.box-title-btn[aria-expanded="true"] {
+  color: #9f38e9 !important; 
+}
+
+/* Marble-style purple/white background */
+.card {
+  background: linear-gradient(135deg, rgba(240, 230, 255, 0.6), rgba(255, 255, 255, 0.9)),
+              url('https://www.transparenttextures.com/patterns/marble.png');
+  background-size: cover;
+  background-blend-mode: lighten;
+  border-radius: 12px;
+}
+
+/* Box titles */
+.box-title-btn {
+  color: #6600cc;
+  font-size: 1.7rem; 
+}
+
+/* Extra info row inside the button */
+.box-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-extra-text a {
+  color: #000000; 
+}
+
+.box-extra-text a:hover {
+  color: #4b0082;
+}
+
+.box-extra-text {
+  font-size: 1.2rem;  
+  font-weight: 600;    /* a bit bolder */
+  color: #000000; 
+}
+
+/* this defines the images sizes and borders on phones */
+.box-extra-images img {
+  height: 80px;
+  width: auto;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* this defines the images sizes and borders on computers and tablets */
+@media (min-width: 768px) {
+  .box-extra-images img {
+    height: 80px;
+    width: auto;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pad-bottom { min-height: 200px; }
+}
+
+.fancy-list {
+  list-style: none; /* Remove default bullets */
+  padding-left: 1.2em;
+}
+
+.fancy-list li::before {
+  content: "★";
+  color: #6600cc;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.2em;
+}
+
+
+/* End of stuff for transfer learning page */
+/* -------------- */
