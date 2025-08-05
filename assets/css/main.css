@@ -1847,7 +1847,7 @@ section,
 /* -------------- */
 /* Start of stuff for transfer learning page */
 .highlight-link {
-  color: #9f38e9; 
+  color: #6600cc; 
   font-weight: bold;
   text-decoration: underline;
 }
@@ -1858,7 +1858,7 @@ section,
 .box-title-btn:focus,
 .box-title-btn:focus-visible,
 .box-title-btn[aria-expanded="true"] {
-  color: #9f38e9 !important; 
+  color: #6600cc !important; 
 }
 
 /* Marble-style purple/white background */
