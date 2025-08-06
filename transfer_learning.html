@@ -94,45 +94,41 @@
 
   <!-- ===== Collapsible grid ===== -->
   <section id="rej-grid" class="section">
-    <div class="container-fluid px-0" data-aos="fade-up"></div>
-      <div class="row gy-4 align-items-start accordion" id="rej-accordion">
+    <div class="container" data-aos="fade-up">
+      <div class="row g-4" id="rej-accordion"><!-- g-4 = 1.5 rem gap on all sides -->
 
 <!-- ############################################################ -->
 <!-- ###################  BOXES GRID START  ##################### -->
 <!-- ############################################################ -->
 
-<div class="container py-5"><!-- optional: keep cards away from page edges -->
-
-  <div class="row g-4" id="rej-accordion"><!-- g-4 = 1.5 rem gap on all sides -->
-
-
     <!-- ************ Start of Box 1 ************ -->
     <div class="col-12 col-md-6">
-      <div class="card shadow-sm pad-bottom">
+      <div class="card shadow-sm transfer-card">
+        
+        <!-- Header with title and badge (outside button) -->
+        <div class="card-header-row d-flex justify-content-between align-items-start p-3 pb-2">
+          <span class="card-title">Quantitative Finance</span>
+          <span class="badge bg-success">Industry</span>
+        </div>
 
-        <button class="btn btn-link text-decoration-none w-100 text-start py-3 px-4 fw-bold box-title-btn"
+        <button class="btn btn-link text-decoration-none w-100 text-start p-0 fw-bold box-title-btn"
                 data-bs-toggle="collapse"
                 data-bs-target="#box_1"
                 aria-expanded="false"
                 aria-controls="box_1">
-          <div class="box-header-content d-flex flex-column flex-md-row
-                  align-items-center justify-content-between">
-            <span>Quantitative Finance</span>
-
-            <div class="extra-wrap d-flex flex-wrap align-items-center justify-content-center mt-3 mt-md-0">
-          <span class="box-extra-text me-md-2 text-center text-md-start">
-            Our associates work at
-          </span>
-          <div class="box-extra-images d-flex flex-wrap justify-content-center">
-                <img src="assets/img/spotlights/jane_street.png"  alt="Jane Street">
-                <img src="assets/img/spotlights/point72.png"      alt="Point72">
-                <img src="assets/img/spotlights/five_rings.png"   alt="Five Rings">
-                <img src="assets/img/spotlights/flow_traders.png" alt="Flow Traders">
-                <img src="assets/img/spotlights/balyasny.png"     alt="Balyasny">
-              </div>
+          
+          <!-- Centered content -->
+          <div class="card-center-content">
+            <p class="associates-text">Our associates work at</p>
+            <div class="company-logos">
+              <img src="assets/img/spotlights/jane_street.png"  alt="Jane Street">
+              <img src="assets/img/spotlights/point72.png"      alt="Point72">
+              <img src="assets/img/spotlights/five_rings.png"   alt="Five Rings">
+              <img src="assets/img/spotlights/flow_traders.png" alt="Flow Traders">
+              <img src="assets/img/spotlights/balyasny.png"     alt="Balyasny">
             </div>
           </div>
-          <span class="badge bg-success">Industry</span>
+          
         </button>
 
         <div id="box_1" class="collapse" data-bs-parent="#rej-accordion">
@@ -154,30 +150,31 @@
 
     <!-- ************ Start of Box 2 ************ -->
     <div class="col-12 col-md-6">
-      <div class="card shadow-sm pad-bottom">
+      <div class="card shadow-sm transfer-card">
+        
+        <!-- Header with title and badge (outside button) -->
+        <div class="card-header-row d-flex justify-content-between align-items-start p-3 pb-2">
+          <span class="card-title">Data Science</span>
+          <span class="badge bg-success">Industry</span>
+        </div>
 
-        <button class="btn btn-link text-decoration-none w-100 text-start py-3 px-4 fw-bold box-title-btn"
+        <button class="btn btn-link text-decoration-none w-100 text-start p-0 fw-bold box-title-btn"
                 data-bs-toggle="collapse"
                 data-bs-target="#box_2"
                 aria-expanded="false"
                 aria-controls="box_2">
-          <div class="box-header-content d-flex flex-column flex-md-row
-                  align-items-center justify-content-between">
-            <span>Data Science</span>
-
-            <div class="extra-wrap d-flex flex-wrap align-items-center justify-content-center mt-3 mt-md-0">
-          <span class="box-extra-text me-md-2 text-center text-md-start">
-            Our associates work at
-          </span>
-          <div class="box-extra-images d-flex flex-wrap justify-content-center">
-                <img src="assets/img/spotlights/google.webp"   alt="Google">
-                <img src="assets/img/spotlights/revolut.png"    alt="Revolut">
-                <img src="assets/img/spotlights/amazon.jpg"     alt="Amazon">
-                <img src="assets/img/spotlights/bending_spoons.png" alt="Bending Spoons">
-              </div>
+          
+          <!-- Centered content -->
+          <div class="card-center-content">
+            <p class="associates-text">Our associates work at</p>
+            <div class="company-logos">
+              <img src="assets/img/spotlights/google.webp"   alt="Google">
+              <img src="assets/img/spotlights/revolut.png"    alt="Revolut">
+              <img src="assets/img/spotlights/amazon.jpg"     alt="Amazon">
+              <img src="assets/img/spotlights/bending_spoons.png" alt="Bending Spoons">
             </div>
           </div>
-          <span class="badge bg-success">Industry</span>
+          
         </button>
 
         <div id="box_2" class="collapse" data-bs-parent="#rej-accordion">
@@ -198,28 +195,31 @@
 
     <!-- ************ Start of Box 3 ************ -->
     <div class="col-12 col-md-6">
-      <div class="card shadow-sm pad-bottom">
+      <div class="card shadow-sm transfer-card">
+        
+        <!-- Header with title and badge (outside button) -->
+        <div class="card-header-row d-flex justify-content-between align-items-start p-3 pb-2">
+          <span class="card-title">Machine Learning Research</span>
+          <span class="badge bg-danger">Research</span>
+        </div>
 
-        <button class="btn btn-link text-decoration-none w-100 text-start py-3 px-4 fw-bold box-title-btn"
+        <button class="btn btn-link text-decoration-none w-100 text-start p-0 fw-bold box-title-btn"
                 data-bs-toggle="collapse"
                 data-bs-target="#box_3"
                 aria-expanded="false"
                 aria-controls="box_3">
-          <div class="box-header-content d-flex flex-column flex-md-row
-                  align-items-center justify-content-between">
-            <span>Machine Learning Research</span>
-
-            <div class="extra-wrap d-flex flex-wrap align-items-center justify-content-center mt-3 mt-md-0">
-          <span class="box-extra-text me-md-2 text-center text-md-start">
-            Check out some of our associates' work
-            <a href="https://bsmachinelearning.com/projects.html"
-            target="_blank" rel="noopener" class="text-decoration-underline"
-            onclick="event.stopPropagation(); window.open(this.href,'_blank'); return false;">
-            here</a>
-          </span>
-            </div>
+          
+          <!-- Centered content -->
+          <div class="card-center-content">
+            <p class="associates-text">
+              Check out some of our associates' work
+              <a href="https://bsmachinelearning.com/projects.html"
+              target="_blank" rel="noopener" class="text-decoration-underline"
+              onclick="event.stopPropagation(); window.open(this.href,'_blank'); return false;">
+              here</a>
+            </p>
           </div>
-          <span class="badge bg-danger">Research</span>
+          
         </button>
 
         <div id="box_3" class="collapse" data-bs-parent="#rej-accordion">
@@ -240,31 +240,32 @@
 
     <!-- ************ Start of Box 4 ************ -->
     <div class="col-12 col-md-6">
-      <div class="card shadow-sm pad-bottom">
+      <div class="card shadow-sm transfer-card">
+        
+        <!-- Header with title and badge (outside button) -->
+        <div class="card-header-row d-flex justify-content-between align-items-start p-3 pb-2">
+          <span class="card-title">Master's</span>
+          <span class="badge bg-primary">Academia</span>
+        </div>
 
-        <button class="btn btn-link text-decoration-none w-100 text-start py-3 px-4 fw-bold box-title-btn"
+        <button class="btn btn-link text-decoration-none w-100 text-start p-0 fw-bold box-title-btn"
                 data-bs-toggle="collapse"
                 data-bs-target="#box_4"
                 aria-expanded="false"
                 aria-controls="box_4">
-          <div class="box-header-content d-flex flex-column flex-md-row
-                  align-items-center justify-content-between">
-            <span>Master's</span>
-
-            <div class="extra-wrap d-flex flex-wrap align-items-center justify-content-center mt-3 mt-md-0">
-          <span class="box-extra-text me-md-2 text-center text-md-start">
-            Our associates have pursued a Master degree at
-          </span>
-          <div class="box-extra-images d-flex flex-wrap justify-content-center">
-                <img src="assets/img/spotlights/client-11.jpg" alt="Oxford">
-                <img src="assets/img/spotlights/client-10.png" alt="MIT">
-                <img src="assets/img/spotlights/client-4.jpg"  alt="Columbia">
-                <img src="assets/img/spotlights/client-7.jpg"  alt="EPFL">
-                <img src="assets/img/spotlights/client-6.jpg"  alt="ETH Zürich">
-              </div>
+          
+          <!-- Centered content -->
+          <div class="card-center-content">
+            <p class="associates-text">Our associates have pursued a Master degree at</p>
+            <div class="company-logos">
+              <img src="assets/img/spotlights/client-11.jpg" alt="Oxford">
+              <img src="assets/img/spotlights/client-10.png" alt="MIT">
+              <img src="assets/img/spotlights/client-4.jpg"  alt="Columbia">
+              <img src="assets/img/spotlights/client-7.jpg"  alt="EPFL">
+              <img src="assets/img/spotlights/client-6.jpg"  alt="ETH Zürich">
             </div>
           </div>
-          <span class="badge bg-primary">Academia</span>
+          
         </button>
 
         <div id="box_4" class="collapse" data-bs-parent="#rej-accordion">
@@ -286,28 +287,29 @@
 
     <!-- ************ Start of Box 5 ************ -->
     <div class="col-12 col-md-6">
-      <div class="card shadow-sm pad-bottom">
+      <div class="card shadow-sm transfer-card">
+        
+        <!-- Header with title and badge (outside button) -->
+        <div class="card-header-row d-flex justify-content-between align-items-start p-3 pb-2">
+          <span class="card-title">PhD</span>
+          <span class="badge bg-primary">Academia</span>
+        </div>
 
-        <button class="btn btn-link text-decoration-none w-100 text-start py-3 px-4 fw-bold box-title-btn"
+        <button class="btn btn-link text-decoration-none w-100 text-start p-0 fw-bold box-title-btn"
                 data-bs-toggle="collapse"
                 data-bs-target="#box_5"
                 aria-expanded="false"
                 aria-controls="box_5">
-          <div class="box-header-content d-flex flex-column flex-md-row
-                  align-items-center justify-content-between">
-            <span>PhD</span>
-
-            <div class="extra-wrap d-flex flex-wrap align-items-center justify-content-center mt-3 mt-md-0">
-          <span class="box-extra-text me-md-2 text-center text-md-start">
-            Our associates are pursuing a PhD at
-          </span>
-          <div class="box-extra-images d-flex flex-wrap justify-content-center">
-                <img src="assets/img/spotlights/client-10.png" alt="MIT">
-                <img src="assets/img/spotlights/uchicago.png"  alt="UChicago">
-              </div>
+          
+          <!-- Centered content -->
+          <div class="card-center-content">
+            <p class="associates-text">Our associates are pursuing a PhD at</p>
+            <div class="company-logos">
+              <img src="assets/img/spotlights/client-10.png" alt="MIT">
+              <img src="assets/img/spotlights/uchicago.png"  alt="UChicago">
             </div>
           </div>
-          <span class="badge bg-primary">Academia</span>
+          
         </button>
 
         <div id="box_5" class="collapse" data-bs-parent="#rej-accordion">
@@ -326,20 +328,13 @@
     </div>
     <!-- ************ End of Box 5 ************ -->
 
-
-
-
-
-  </div><!-- /.row -->
-</div><!-- /.container -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>
 
 <!-- ############################################################ -->
 <!-- ####################  BOXES GRID END  ###################### -->
 <!-- ############################################################ -->
-        
-      </div>
-    </div>
-  </section>
 
 </main>
 

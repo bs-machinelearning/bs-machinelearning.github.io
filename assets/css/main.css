@@ -1938,5 +1938,108 @@ section,
   max-width: 1200px; /* Ensure cards don't become too wide on very large screens */
 }
 
+/* Transfer Learning Card Structure */
+.transfer-card {
+  min-height: 280px; /* Ensure consistent height */
+  display: flex;
+  flex-direction: column;
+}
+
+.transfer-card .box-title-btn {
+  flex: 1;
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: center !important;
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.transfer-card .box-title-btn:focus,
+.transfer-card .box-title-btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Header row with title and badge */
+.card-header-row {
+  width: 100%;
+  border-bottom: 1px solid rgba(102, 0, 204, 0.1);
+}
+
+.card-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #6600cc;
+}
+
+.card-header-row .badge {
+  font-size: 1rem !important;
+  padding: 8px 12px !important;
+  font-weight: 600 !important;
+}
+
+/* Center content area */
+.card-center-content {
+  flex: 1;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  min-height: 120px;
+  padding: 15px 20px;
+  width: 100% !important;
+}
+
+.associates-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 15px 0 !important;
+  text-align: center !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+.associates-text a {
+  color: #6600cc;
+  text-decoration: underline;
+}
+
+.associates-text a:hover {
+  color: #4b0082;
+}
+
+/* Company logos styling */
+.company-logos {
+  min-height: 60px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  text-align: center !important;
+  gap: 10px;
+  margin: 0 auto !important;
+}
+
+.company-logos img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  margin: 5px;
+  display: inline-block;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .company-logos img {
+    height: 70px;
+    margin: 8px;
+  }
+}
+
 /* End of stuff for transfer learning page */
 /* -------------- */
