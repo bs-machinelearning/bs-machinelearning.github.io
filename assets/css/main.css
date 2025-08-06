@@ -1933,6 +1933,10 @@ section,
   margin-left: -1.2em;
 }
 
+/* Container max-width constraint for transfer learning grid */
+#rej-grid .container {
+  max-width: 1200px; /* Ensure cards don't become too wide on very large screens */
+}
 
 /* End of stuff for transfer learning page */
 /* -------------- */
