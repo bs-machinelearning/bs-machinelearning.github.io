@@ -82,6 +82,12 @@
                 "img": "alice-romaniello.jpg",
                 "link": "https://www.linkedin.com/in/alice-romaniello-0b252a254/",
                 "title": "BSc Mathematics and Computer Science for Artificial Intelligence at Bocconi University"
+            },
+            {
+                "name": "Giacomo Cirò*",
+                "img": "jack.jpg",
+                "link": "https://www.linkedin.com/in/giacomo-ciro/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
             }
         ],
         "buttons": [],
@@ -195,6 +201,12 @@
                 "img": "ledio-duda.png",
                 "link": "https://www.linkedin.com/in/ledio-duda/",
                 "title": "BSc in Economics, Management and Computer Science at Bocconi University"
+            },
+            {
+                "name": "Giacomo Cirò*",
+                "img": "jack.jpg",
+                "link": "https://www.linkedin.com/in/giacomo-ciro/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
             }
         ],
         "buttons": [],
@@ -211,6 +223,12 @@
                 "img": "marco-beltramin.png",
                 "link": "https://www.linkedin.com/in/marco-beltramin-811b74298/",
                 "title": "MSc in Finance at Bocconi University"
+            },
+            {
+                "name": "Giacomo Cirò*",
+                "img": "jack.jpg",
+                "link": "https://www.linkedin.com/in/giacomo-ciro/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
             }
         ],
         "buttons": [],

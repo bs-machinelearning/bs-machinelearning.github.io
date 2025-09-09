@@ -2077,3 +2077,21 @@ section,
 
 /* End of stuff for transfer learning page */
 /* -------------- */
+
+.supervisor-disclaimer {
+  color: #555;
+  font-size: 0.97rem;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: var(--contrast-color);
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-color);
+}
+
+.supervisor-disclaimer .bi-info-circle {
+  color: var(--accent-color);
+  font-size: 1.2em;
+}
