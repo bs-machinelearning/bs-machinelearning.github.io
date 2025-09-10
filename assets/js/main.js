@@ -231,7 +231,7 @@ function updateProjectPage() {
       const link = node.querySelector('.author-link');
       link.href = author.link;
       link.textContent = author.name;
-      authorsList.insertBefore(node, authorTemplate.nextSibling);
+      authorsList.append(node);
     });
     authorTemplate.remove();
 

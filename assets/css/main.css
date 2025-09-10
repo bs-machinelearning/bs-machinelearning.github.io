@@ -2095,3 +2095,20 @@ section,
 .spotlight-subtitle{font-weight:600;font-size:2rem;color:#6600cc;margin:.25rem 0 1rem;text-align:center}
 .spotlight-divider{border:0;border-top:1px solid rgba(255,255,255,.18);width:220px;margin:1rem auto 1.25rem}
 
+.supervisor-disclaimer {
+  color: #555;
+  font-size: 0.97rem;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: var(--contrast-color);
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-color);
+}
+
+.supervisor-disclaimer .bi-info-circle {
+  color: var(--accent-color);
+  font-size: 1.2em;
+}
