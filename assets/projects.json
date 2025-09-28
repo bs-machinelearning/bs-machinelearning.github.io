@@ -1,5 +1,32 @@
 [
     {
+        "title": "Siamese Network for Microfinance Credit Scoring under Low-Data Regimes",
+        "image": "siamese-network-microfinance.jpeg",
+        "authors": [
+            {
+                "name": "Bogomazov Vladislav",
+                "img": "vladislav-bogomazov-linkedin.jpeg",
+                "link": "https://www.linkedin.com/in/vladislav-bogomazov-587533264/",
+                "title": "BSc in Economics, Management and Computer Science at Bocconi University"
+            },
+            {
+                "name": "Marco Lomele*",
+                "img": "marco-lomele-linkedin.jpeg",
+                "link": "https://www.linkedin.com/in/marco-lomele",
+                "title": "MSc in Data Science and Business Analytics at Bocconi University"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Report",
+                "link": "https://bsmachinelearning.com/assets/reports/BSML_siamese_network.pdf"
+            }
+        ],
+        "date": "September 28, 2025",
+        "content_type": "Research",
+        "id": "250928"
+    },
+    {
         "title": "Learning to Bet: Reinforcement Learning for Live Wagering in Major League Baseball",
         "image": "mlb-betting.jpg",
         "authors": [
