@@ -299,6 +299,7 @@
         ],
         "buttons": [],
         "date": "December 18, 2025",
+        "link": "https://github.com/alefrabel/bitboard-chess-engino",
         "content_type": "Implementation",
         "id": "240120"
     },
@@ -308,7 +309,7 @@
         "authors": [
             {
                 "name": "Alessandro Bellini",
-                "img": "bellini.jpg",
+                "img": "alessandro_bellini.jpg",
                 "link": "https://github.com/alefrabel",
                 "title": "Msc in AI at Bocconi University"
             },
@@ -320,25 +321,26 @@
             },
             {
                 "name": "Matilde Dolfato",
-                "img": "mati.jpg",
+                "img": "matilde_dolfato.jpg",
                 "link": "https://www.linkedin.com/in/matilde-dolfato/",
                 "title": "Msc in AI at Bocconi University"
             },
             {
                 "name": "Luca Colaci",
-                "img": "cola.jpg",
+                "img": "Luca_colaci.jpg",
                 "link": "https://www.linkedin.com/in/lucacolaci/",
                 "title": "Msc in AI at Bocconi University"
             },
             {
                 "name": "Flavio Caroli",
-                "img": "crazy.jpg",
+                "img": "flavio_caroli.jpg",
                 "link": "https://www.linkedin.com/in/flavio-caroli-375359221/",
                 "title": "Msc in AI at Bocconi University"
             }
         ],
         "buttons": [],
         "date": "June 25, 2025",
+        "link": "https://github.com/alefrabel/saLM-1",
         "content_type": "Resaearch",
         "id": "240121"
     }
