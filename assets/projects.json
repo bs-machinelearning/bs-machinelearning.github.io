@@ -284,5 +284,62 @@
         "date": "January 19, 2024",
         "content_type": "Research",
         "id": "240119"
+    },
+    {
+        "title": "Chess Engine",
+        "image": "knight.jpg",
+        "authors": [
+            {
+                "name": "Alessandro Bellini",
+                "img": "bellini.jpg",
+                "link": "https://github.com/alefrabel",
+                "title": "Msc in AI at Bocconi University"
+            }
+           
+        ],
+        "buttons": [],
+        "date": "December 18, 2025",
+        "content_type": "Implementation",
+        "id": "240120"
+    },
+    {
+        "title": "saLM-1",
+        "image": "salmone.jpg",
+        "authors": [
+            {
+                "name": "Alessandro Bellini",
+                "img": "bellini.jpg",
+                "link": "https://github.com/alefrabel",
+                "title": "Msc in AI at Bocconi University"
+            },
+            {
+                "name": "Riccardo Alberghi",
+                "img": "riccardo_alberghi.jpg",
+                "link": "https://www.linkedin.com/in/alberghir/",
+                "title": "Msc in AI at Bocconi University"
+            },
+            {
+                "name": "Matilde Dolfato",
+                "img": "mati.jpg",
+                "link": "https://www.linkedin.com/in/matilde-dolfato/",
+                "title": "Msc in AI at Bocconi University"
+            },
+            {
+                "name": "Luca Colaci",
+                "img": "cola.jpg",
+                "link": "https://www.linkedin.com/in/lucacolaci/",
+                "title": "Msc in AI at Bocconi University"
+            },
+            {
+                "name": "Flavio Caroli",
+                "img": "crazy.jpg",
+                "link": "https://www.linkedin.com/in/flavio-caroli-375359221/",
+                "title": "Msc in AI at Bocconi University"
+            }
+        ],
+        "buttons": [],
+        "date": "June 25, 2025",
+        "content_type": "Resaearch",
+        "id": "240121"
     }
 ]
