@@ -285,24 +285,7 @@
         "content_type": "Research",
         "id": "240119"
     },
-    {
-        "title": "Chess Engine",
-        "image": "knight.jpg",
-        "authors": [
-            {
-                "name": "Alessandro Bellini",
-                "img": "bellini.jpg",
-                "link": "https://github.com/alefrabel",
-                "title": "Msc in AI at Bocconi University"
-            }
-           
-        ],
-        "buttons": [],
-        "date": "December 18, 2025",
-        "link": "https://github.com/alefrabel/bitboard-chess-engino",
-        "content_type": "Implementation",
-        "id": "240120"
-    },
+
     {
         "title": "saLM-1",
         "image": "salmone.jpg",
@@ -311,37 +294,45 @@
                 "name": "Alessandro Bellini",
                 "img": "alessandro_bellini.jpg",
                 "link": "https://github.com/alefrabel",
-                "title": "Msc in AI at Bocconi University"
+                "title": "MSc in Artificial Intelligence at Bocconi University"
             },
             {
                 "name": "Riccardo Alberghi",
                 "img": "riccardo_alberghi.jpg",
                 "link": "https://www.linkedin.com/in/alberghir/",
-                "title": "Msc in AI at Bocconi University"
+                "title": "MSc in Artificial Intelligence at Bocconi University"
             },
             {
                 "name": "Matilde Dolfato",
                 "img": "matilde_dolfato.jpg",
                 "link": "https://www.linkedin.com/in/matilde-dolfato/",
-                "title": "Msc in AI at Bocconi University"
+                "title": "MSc in Artificial Intelligence at Bocconi University"
             },
             {
                 "name": "Luca Colaci",
                 "img": "Luca_colaci.jpg",
                 "link": "https://www.linkedin.com/in/lucacolaci/",
-                "title": "Msc in AI at Bocconi University"
+                "title": "MSc in Artificial Intelligence at Bocconi University"
             },
             {
                 "name": "Flavio Caroli",
                 "img": "flavio_caroli.jpg",
                 "link": "https://www.linkedin.com/in/flavio-caroli-375359221/",
-                "title": "Msc in AI at Bocconi University"
+                "title": "MSc in Artificial Intelligence at Bocconi University"
             }
         ],
-        "buttons": [],
-        "date": "June 25, 2025",
-        "link": "https://github.com/alefrabel/saLM-1",
+        "buttons": [
+            {
+                "name": "Code",
+                "link": "https://github.com/alefrabel/saLM-1"
+            },
+            {
+                "name": "Report",
+                "link": "https://bsmachinelearning.com/assets/reports/250625_saLM_1.pdf"
+            }
+        ],
+        "date": "May 25, 2025",
         "content_type": "Resaearch",
-        "id": "240121"
+        "id": "250625"
     }
 ]
