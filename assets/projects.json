@@ -81,7 +81,7 @@
             },
             {
                 "name": "Davide Beltrame",
-                "img": "goat.jpg",
+                "img": "davide_beltrame.jpg",
                 "link": "https://www.linkedin.com/in/davide-beltrame/",
                 "title": "MSc in Artificial Intelligence at Bocconi University"
             }
@@ -284,5 +284,55 @@
         "date": "January 19, 2024",
         "content_type": "Research",
         "id": "240119"
+    },
+
+    {
+        "title": "saLM-1",
+        "image": "salmone.jpg",
+        "authors": [
+            {
+                "name": "Alessandro Bellini",
+                "img": "alessandro_bellini.jpg",
+                "link": "https://github.com/alefrabel",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
+            },
+            {
+                "name": "Riccardo Alberghi",
+                "img": "riccardo_alberghi.jpg",
+                "link": "https://www.linkedin.com/in/alberghir/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
+            },
+            {
+                "name": "Matilde Dolfato",
+                "img": "matilde_dolfato.jpg",
+                "link": "https://www.linkedin.com/in/matilde-dolfato/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
+            },
+            {
+                "name": "Luca Colaci",
+                "img": "luca_colaci.jpg",
+                "link": "https://www.linkedin.com/in/lucacolaci/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
+            },
+            {
+                "name": "Flavio Caroli",
+                "img": "flavio_caroli.jpg",
+                "link": "https://www.linkedin.com/in/flavio-caroli-375359221/",
+                "title": "MSc in Artificial Intelligence at Bocconi University"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Code",
+                "link": "https://github.com/alefrabel/saLM-1"
+            },
+            {
+                "name": "Report",
+                "link": "https://bsmachinelearning.com/assets/reports/250625_saLM_1.pdf"
+            }
+        ],
+        "date": "May 25, 2025",
+        "content_type": "Resaearch",
+        "id": "250625"
     }
 ]
