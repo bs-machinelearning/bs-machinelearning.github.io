@@ -20,10 +20,8 @@ function updateProjects() {
   ])
   .then(([templateHTML, projects]) => {
     const container = document.getElementById('project-container');
-    console.log(projects)
     // sort projects by attribute "id" in ascending order
     projects.sort((a, b) => b.id - a.id);
-    console.log(projects)
     projects.forEach(project => {
       // Create a DOM element from template
       const tempDiv = document.createElement('div');
