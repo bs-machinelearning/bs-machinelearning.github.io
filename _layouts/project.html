@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+<main class="main">
+
+  <div class="d-flex justify-content-center align-items-center flex-column">
+
+    <div class="col-lg-8">
+
+      <!-- Blog Details Section -->
+      <section id="blog-details" class="blog-details section">
+        <div class="container">
+
+          <article class="article">
+
+            <div class="post-img">
+              <img src="{{ page.cover }}" alt="{{ page.title }}">
+            </div>
+
+            <h2 id="project-title" class="title text-center">{{ page.title }}</h2>
+
+            <div id="author-names-date" class="meta-top d-flex flex-column align-items-center text-center">
+              <div class="d-flex align-items-center mb-2 justify-content-center">
+                <i class="bi bi-clock"></i>
+                <time id="project-date" datetime="{{ page.date | date_to_xmlschema }}" class="ms-1">
+                  {{ page.date | date: "%B %d, %Y" }}
+                </time>
+              </div>
+              {% if page.authors %}
+              <ul id="authors-list"
+                class="list-unstyled d-flex align-items-center justify-content-center flex-wrap gap-3">
+                {% for a in page.authors %}
+                <li class="author-template d-flex align-items-center justify-content-center">
+                  <i class="bi bi-person"></i>
+                  {% if a.link %}
+                  <a class="author-link ms-1" href="{{ a.link }}" target="_blank" rel="noopener">{{ a.name }}</a>
+                  {% else %}
+                  <span class="ms-1">{{ a.name }}</span>
+                  {% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </div><!-- End meta top -->
+
+            <div id="main-content" class="content">
+              {{ content }}
+            </div>
+
+            {% if page.buttons %}
+            <div id="main-buttons" class="d-flex align-items-center justify-content-around mt-4 flex-wrap gap-3">
+              {% for b in page.buttons %}
+              <a class="button-template btn-chatbot" href="{{ b.link }}" target="_blank" rel="noopener">{{ b.name }}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="meta-bottom"></div>
+
+          </article>
+
+        </div>
+      </section><!-- /Blog Details Section -->
+
+      <!-- Blog Author Section -->
+      {% if page.authors %}
+      <section id="project-author" class="project-author section">
+        <div class="container">
+          <div id="author-container"
+            class="author-container d-flex flex-wrap justify-content-center align-items-stretch gap-4">
+            {% for a in page.authors %}
+            <div class="author-profile-template d-flex flex-column align-items-center text-center p-4"
+              style="flex: 1 1 220px; max-width: 260px;">
+              {% if a.avatar %}
+              <img class="author-img rounded-circle mb-3" src="{{ a.avatar }}" alt="{{ a.name }}"
+                style="width:140px;height:140px;object-fit:cover;">
+              {% endif %}
+              <h4 class="author-name mb-2">{{ a.name }}</h4>
+              <div class="social-links mb-2">
+                {% if a.link %}
+                <a class="author-link" href="{{ a.link }}" target="_blank" rel="noopener">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                {% endif %}
+              </div>
+              {% if a.desc %}
+              <p class="author-desc mb-0">{{ a.desc }}</p>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+      {% endif %}
+
+    </div>
+
+  </div>
+
+</main>

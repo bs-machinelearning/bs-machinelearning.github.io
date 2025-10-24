@@ -1,0 +1,51 @@
+title: BSML
+timezone: Europe/Rome
+url: https://bsmachinelearning.com
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  events:
+    output: true
+    permalink: /events/:name/
+  hackathons:
+    output: true
+    permalink: /hackathons/:name/
+  theses:
+    output: true
+    permalink: /theses/:name/
+
+# Auto-apply layouts to collection items (uses filenames in _layouts/)
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: event
+
+  - scope:
+      path: ""
+      type: "hackathons"
+    values:
+      layout: hackathon
+
+  - scope:
+      path: ""
+      type: "theses"
+    values:
+      layout: these
+
+exclude:
+  - node_modules
+  - README*
+  - flake*

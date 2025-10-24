@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------
+# Thesis List Section
+--------------------------------------------------------------*/
+.theses-page .page-title a {
+  color: var(--default-color);
+  text-decoration: underline;
+}
+
+.theses-page .page-title a:hover {
+  color: var(--accent-color);
+}
+
+.theses article {
+  background-color: var(--surface-color);
+  box-shadow: 0 4px 25px rgba(102, 0, 204, 0.1);
+  padding: 30px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.theses .post-img {
+  max-height: 240px;
+  margin: -30px -30px 15px -30px;
+  overflow: hidden;
+}
+
+.theses .post-category {
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 10px;
+}
+
+.theses .title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.theses .title a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.theses .title a:hover {
+  color: var(--accent-color);
+}
+
+.theses .post-author-img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.theses .post-author {
+  margin-bottom: 5px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.theses .post-author a {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.theses .post-author a:hover {
+  color: var(--accent-color);
+}
+
+.theses .post-date {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 0;
+}

@@ -1,0 +1,87 @@
+---
+layout: default
+title: BSML | Projects
+permalink: /projects/
+---
+
+<div
+  class="page-title container d-flex flex-column justify-content-center align-items-center text-center position-relative"
+  data-aos="zoom-out">
+  <p>
+    Use our official
+    <a href="https://www.overleaf.com/read/cswbrkgbwhrh#6c992d" target="_blank">BSML LaTeX template</a>
+    to format your report correctly.
+  </p>
+  <h3>Kickstart your Deep Learning project!</h3>
+  <p>
+    Check out our
+    <a href="https://github.com/giacomo-ciro/my-dl-template.git" target="_blank">ready-to-use GitHub template</a>
+    — a complete pipeline to help you get started fast.
+  </p>
+</div>
+
+<section id="blog-posts" class="blog-posts section">
+  <div class="container">
+    <div class="row gy-4" id="project-container">
+      {% assign items = site.projects | sort: "id" | reverse %}
+      {% for p in items %}
+      <div class="blog-post col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 project-card" data-aos="zoom-in"
+        data-aos-delay="{{ forloop.index0 | times: 50 }}">
+        <article>
+          <div class="post-img">
+            <img id="project-image" src="{{ p.cover | default: p.image | relative_url }}" alt="{{ p.title }}">
+          </div>
+
+          <div class="post-text">
+            <div class="d-flex flex-row justify-content-between post-meta">
+              <p id="project-type" class="post-category">{{ p.type | default: p.content_type }}</p>
+              <p class="post-date">
+                <time id="project-date" datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%B %-d, %Y"
+                  }}</time>
+              </p>
+            </div>
+
+            <h2 class="title">
+              <a id="project-link" href="{{ p.url | relative_url }}">
+                {% if p.title contains ":" %}{{ p.title | split: ":" | first }}{% else %}{{ p.title }}{% endif %}
+              </a>
+            </h2>
+
+            <div class="container">
+              <div id="project-authors" class="post-meta row">
+                {% if p.authors %}
+                {% for a in p.authors %}
+                <div class="author-template col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                  <div class="d-flex flex-row align-content-center author-card">
+                    {% assign avatar = a.avatar | default: a.img %}
+                    {% if avatar %}
+                    <img class="author-img img-fluid post-author-img flex-shrink-0" src="{{ avatar | relative_url }}"
+                      alt="{{ a.name }}">
+                    {% endif %}
+                    <div class="d-flex flex-column justify-content-center align-content-center">
+                      <p class="post-author">
+                        {% if a.link %}
+                        <a class="author-link" href="{{ a.link }}" target="_blank">{{ a.name }}</a>
+                        {% else %}
+                        <a class="author-link" href="#" target="_blank">{{ a.name }}</a>
+                        {% endif %}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="supervisor-disclaimer mt-4 mb-2">
+      <i class="bi bi-info-circle"></i>
+      <span>Authors marked with * are supervisors.</span>
+    </div>
+  </div>
+</section>
