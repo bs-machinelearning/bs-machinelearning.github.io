@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
 
   <link rel="icon" href="{{ '/assets/img/white_bg.png' | relative_url }}">
@@ -19,16 +19,12 @@
     crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
 </head>
 
 <body class="{{ page.body_class | default: 'index-page' }}">
-
-  <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
       <a href="{{ '/' | relative_url }}" class="logo d-flex align-items-center me-auto me-xl-0">
         <h1 class="sitename">BSML</h1>
       </a>
@@ -39,7 +35,6 @@
           <li><a href="{{ '/' | relative_url }}#about">About</a></li>
           <li><a href="{{ '/' | relative_url }}#faq">FAQ</a></li>
           <li><a href="{{ '/' | relative_url }}#team">Founders</a></li>
-
           <li><a href="{{ '/projects/' | relative_url }}"
               class="{% if page.url contains '/projects/' %}active{% endif %}">Projects</a></li>
           <li><a href="{{ '/events/' | relative_url }}"
@@ -48,12 +43,8 @@
               class="{% if page.url contains '/hackathons/' %}active{% endif %}">Hackathons</a></li>
           <li><a href="{{ '/theses/' | relative_url }}"
               class="{% if page.url contains '/theses/' %}active{% endif %}">Theses Repo</a></li>
-          <li>
-            <a href="{{ '/transfer_learning/' | relative_url }}"
-              class="{% if page.url contains '/transfer_learning/' %}active{% endif %}">
-              Transfer Learning
-            </a>
-          </li>
+          <li><a href="{{ '/transfer_learning/' | relative_url }}"
+              class="{% if page.url contains '/transfer_learning/' %}active{% endif %}">Transfer Learning</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -61,24 +52,58 @@
       <a class="btn-joinus" href="{{ '/' | relative_url }}#open-roles">JOIN US</a>
     </div>
   </header>
-  <!-- ======= End Header ======= -->
 
-  <!-- ======= Main Content ======= -->
   <main class="main">
     {{ content }}
   </main>
-  <!-- ======= End Main ======= -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer dark-background"></footer>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer text-light" style="
+  width: 100%;
+  background: linear-gradient(135deg, #15002a 0%, #3b0070 100%);
+  padding: 60px 0;
+">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center" style="gap: 50px;">
+      <div class="text-md-start text-center">
+        <h2 class="fw-bold mb-3">BSML | Bocconi Students for Machine Learning</h2>
+        <p class="mb-1 fw-semibold fs-5">Bocconi University</p>
+        <p class="mb-1 fs-6">Milan, Italy</p>
+        <p class="mb-0 fs-6">
+          Email:
+          <a href="mailto:bsmachinelearning@gmail.com" class="text-light text-decoration-none">
+            bsmachinelearning@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <div class="text-md-end text-center">
+        <div class="d-flex gap-4 justify-content-md-end justify-content-center mb-4">
+          <a href="https://www.instagram.com/bs.machinelearning/" class="text-light fs-3" style="opacity:0.9;">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://it.linkedin.com/company/bocconi-students-for-machine-learning" class="text-light fs-3"
+            style="opacity:0.9;">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/bs-machinelearning" class="text-light fs-3" style="opacity:0.9;">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+        <p class="small mb-0" style="opacity:0.8;">Last update: {{ site.time | date: "%B %Y" }}</p>
+      </div>
+    </div>
+  </footer>
+  <!-- ======= End Footer ======= -->
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
     <i class="bi bi-arrow-up-short"></i>
   </a>
+
   <div id="preloader"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" -->
+  <!-- crossorigin="anonymous"></script> -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>

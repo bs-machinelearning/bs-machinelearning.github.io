@@ -4,56 +4,41 @@ title: BSML | Hackathons
 permalink: /hackathons/
 ---
 
-<section id="blog-posts" class="blog-posts section">
-  <div class="container">
-    <div class="row gy-4" id="hackathons-container">
-      {% assign items = site.hackathons | sort: "date" | reverse %}
-      {% for h in items %}
-      <div class="col-xl-4 col-md-6">
-        <article class="card h-100" data-aos="zoom-in" data-aos-delay="{{ forloop.index0 | times: 50 }}">
-          <a class="card-link" href="{{ h.url | relative_url }}">
-            {% if h.cover %}
-            <div class="card-cover-wrap">
-              <img class="card-img-top img-fluid" src="{{ h.cover | relative_url }}" alt="{{ h.title | escape }}">
-            </div>
-            {% endif %}
-          </a>
+<main class="main">
 
-          <div class="card-body">
-            <div class="d-flex justify-content-between text-muted small mb-2">
-              <span class="eyebrow">{{ h.type | default: "Hackathon" }}</span>
-              <time>{{ h.date | date: "%B %-d, %Y" }}</time>
+  <section id="blog-posts" class="blog-posts section">
+    <div class="container">
+      <div id="hackathons-container" class="row">
+
+        {% assign hackathons = site.hackathons | sort: "date" | reverse %}
+        {% for h in hackathons %}
+        <div class="blog-post col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-in">
+          <article>
+
+            <div class="post-img">
+              <a href="{{ h.url | relative_url }}">
+                {% if h.main_image %}
+                <img src="{{ h.main_image | relative_url }}" alt="{{ h.title }}" class="img-fluid">
+                {% endif %}
+              </a>
             </div>
 
-            <h2 class="h5 card-title mb-2">
+            <p class="post-category">
+              <time datetime="{{ h.date | date_to_xmlschema }}">
+                {{ h.date | date: "%B %d, %Y" }}
+              </time>
+            </p>
+
+            <h2 class="title">
               <a href="{{ h.url | relative_url }}">{{ h.title }}</a>
             </h2>
 
-            {% if h.location %}
-            <p class="mb-2 text-muted"><i class="bi bi-geo-alt"></i> {{ h.location }}</p>
-            {% endif %}
+          </article>
+        </div>
+        {% endfor %}
 
-            {% if h.summary %}
-            <p class="card-text">{{ h.summary }}</p>
-            {% else %}
-            <p class="card-text">{{ h.excerpt | strip_html | truncate: 140 }}</p>
-            {% endif %}
-
-            {% if h.authors %}
-            <div class="d-flex flex-wrap gap-2 mt-2">
-              {% for a in h.authors %}
-              <span class="badge text-bg-light d-flex align-items-center gap-1">
-                {% if a.avatar %}<img src="{{ a.avatar | relative_url }}" alt="{{ a.name }}"
-                  style="width:20px;height:20px;border-radius:50%">{% endif %}
-                {{ a.name }}
-              </span>
-              {% endfor %}
-            </div>
-            {% endif %}
-          </div>
-        </article>
       </div>
-      {% endfor %}
     </div>
-  </div>
-</section>
+  </section>
+
+</main>
