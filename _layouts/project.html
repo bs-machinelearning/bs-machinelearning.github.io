@@ -51,7 +51,7 @@ layout: default
             {% if page.buttons %}
             <div id="main-buttons" class="d-flex align-items-center justify-content-around mt-4 flex-wrap gap-3">
               {% for b in page.buttons %}
-              <a class="button-template btn-chatbot" href="{{ b.link }}" target="_blank" rel="noopener">{{ b.name }}</a>
+              <a class="btn-custom" href="{{ b.link }}" target="_blank" rel="noopener">{{ b.name }}</a>
               {% endfor %}
             </div>
             {% endif %}

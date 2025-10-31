@@ -23,6 +23,7 @@
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #1c1c1c;
   /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --purple-gradient: linear-gradient(135deg,#2b0066 0%,#6600cc 100%);
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -125,23 +126,6 @@ h6 {
   margin-left: 2px;
 }
 
-.header .btn-joinus,
-.header .btn-joinus:focus {
-  color: var(--default-color);
-  background: var(--accent-color);
-  font-size: 14px;
-  padding: 8px 26px;
-  margin: 0;
-  border-radius: 4px;
-  transition: 0.3s;
-}
-
-.header .btn-joinus:hover,
-.header .btn-joinus:focus:hover {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
-}
-
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
@@ -160,4 +144,29 @@ h6 {
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+
+/*--------------------------------------------------------------
+# Custom Button with purple gradient
+--------------------------------------------------------------*/
+.btn-custom,
+.btn-custom:focus {
+  color: var(--default-color);
+  background: var(--purple-gradient);
+  font-size: 14px;
+  padding: 8px 26px;
+  margin: 0;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-custom:hover,
+.btn-custom:focus:hover {
+  color: var(--contrast-color);
+}
+
+.btn-custom-gradient,
+.btn-custom-gradient:focus {
+  background: var(--purple-gradient);
 }

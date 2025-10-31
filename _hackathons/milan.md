@@ -19,5 +19,5 @@ There is no theme, no evaluation grid, no winners. Instead:
 Think of it as a sandbox where you can build any tech idea, plus merch.
 
 <div class="d-flex align-items-center justify-content-around">
-    <a href="https://lu.ma/milan-ebl" target="_blank" class="btn-chatbot"> Application Form </a>
+    <a href="https://lu.ma/milan-ebl" target="_blank" class="btn-custom"> Application Form </a>
 </div>

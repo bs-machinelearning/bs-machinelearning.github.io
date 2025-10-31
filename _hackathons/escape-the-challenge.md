@@ -16,8 +16,8 @@ Push your limits and compete in one of two tracks:
 - *Entrepreneur Track*: Design a product that attracts and retains users.
 
 <div class="d-flex align-items-center justify-content-around">
-  <a href="https://thehacklab.org/challenge" target="_blank" class="btn-chatbot">More Info</a>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf866lN5H1gNN5Mxx0uI_x936A52IiQ5jn1dC8ZXKEGZgyLtA/closedform" target="_blank" class="btn-chatbot">Apply</a>
+  <a href="https://thehacklab.org/challenge" target="_blank" class="btn-custom">More Info</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf866lN5H1gNN5Mxx0uI_x936A52IiQ5jn1dC8ZXKEGZgyLtA/closedform" target="_blank" class="btn-custom">Apply</a>
 </div>
 
 <p></p>

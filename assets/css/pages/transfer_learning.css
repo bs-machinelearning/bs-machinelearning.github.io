@@ -201,58 +201,6 @@
   }
 }
 
-/* Big purple CTA button */
-.btn-apply_to_tl_program {
-  --btn-bg: #6600cc;
-  /* primary purple */
-  --btn-bg-hover: #5306a0;
-  /* darker on hover */
-  --btn-bg-active: #5306a0;
-  /* pressed */
-  --btn-text: #ffffff;
-
-  display: inline-block;
-  padding: 1rem 1.75rem;
-  /* big! */
-  border-radius: 9999px;
-  /* pill shape */
-  background: var(--btn-bg);
-  color: var(--btn-text);
-  font-weight: 700;
-  font-size: 1.05rem;
-  line-height: 1;
-  text-decoration: none;
-  letter-spacing: .02em;
-  box-shadow: 0 8px 20px rgba(111, 63, 245, .35);
-  transition: background-color .2s ease, transform .15s ease, box-shadow .2s ease;
-  cursor: pointer;
-}
-
-.btn-apply_to_tl_program:hover {
-  background: var(--btn-bg-hover);
-  transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(111, 63, 245, .45);
-  color: var(--btn-text);
-  text-decoration: none;
-}
-
-.btn-apply_to_tl_program:active {
-  background: var(--btn-bg-active);
-  transform: translateY(0);
-  box-shadow: 0 6px 16px rgba(111, 63, 245, .35);
-}
-
-.btn-apply_to_tl_program:focus-visible {
-  outline: 3px solid #b9a7ff;
-  outline-offset: 2px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .btn-apply_to_tl_program {
-    transition: none;
-  }
-}
-
 /* End of stuff for transfer learning page */
 /* -------------- */
 

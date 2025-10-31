@@ -54,6 +54,7 @@
 }
 
 .btn-outline-primary {
+  background-color: var(--contrast-color);
   border-color: var(--accent-color);
   color: var(--accent-color);
   border-radius: 6px;
