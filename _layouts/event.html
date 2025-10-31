@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<main class="main">
+
+  <!-- Blog Details Section -->
+  <section id="blog-details" class="blog-details section">
+    <div class="container">
+      <article class="article">
+
+        {% if page.main_image %}
+        <div class="post-img">
+          <img src="{{ page.main_image | relative_url }}" alt="{{ page.title }}">
+        </div>
+        {% endif %}
+
+        <h1 class="title">{{ page.title }}</h1>
+
+        <!-- Meta: location + date -->
+        <div class="meta-top">
+          <ul>
+            {% if page.location %}
+            <li>
+              <i class="bi bi-geo-alt"></i>
+              <span style="font-style: italic; text-decoration: underline; font-size: 0.9rem;">
+                {{ page.location }}
+              </span>
+            </li>
+            {% endif %}
+            <li>
+              <i class="bi bi-clock"></i>
+              <time datetime="{{ page.date | date_to_xmlschema }}"
+                style="font-style: italic; text-decoration: underline; font-size: 0.9rem;">
+                {{ page.date | date: "%B %d, %Y" }}
+              </time>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Markdown content -->
+        <div class="content">
+          {{ content }}
+        </div>
+
+        <div class="meta-bottom"></div>
+
+      </article>
+    </div>
+  </section>
+
+</main>

@@ -1,0 +1,50 @@
+---
+layout: default
+title: BSML | Theses Repository
+permalink: /theses/
+---
+
+<div
+  class="page-title container d-flex flex-column justify-content-center align-items-center text-center position-relative"
+  data-aos="zoom-out">
+  <p>Are you looking for inspiration for your Bachelor of Science thesis?<br>Here you can find a collection of theses
+    written by Bocconi students on topics related to Machine Learning and more.</p>
+  <h3>Share your thesis with us!</h3>
+  <p>We would love to explore what you have done and many other students would find it extremely helpful.<br>Just send a
+    single pdf file to <a href="mailto:bsmachinelearning@gmail.com">bsmachinelearning@gmail.com</a> indicating your
+    name, your advisor's name, the title of your thesis, the course and the graduation year : )</p>
+</div>
+
+<section id="theses" class="theses section">
+  <div class="container">
+    <div class="row gy-4">
+      {% assign items = site.theses | sort: "year" | reverse %}
+      {% for t in items %}
+      <div class="col-xl-4 col-md-6">
+        <article class="h-100" data-aos="fade-up" data-aos-delay="{{ forloop.index0 | times: 50 }}">
+
+          {% if t.major %}
+          <p class="post-category">{{ t.major }} '{{ t.year | slice: 2,2 }}</p>
+          {% endif %}
+
+          <h2 class="title">{{ t.title }}</h2>
+
+          {% if t.author %}
+          <p class="post-author">{{ t.author }}</p>
+          {% endif %}
+
+          {% if t.advisor %}
+          <p class="post-date">{{ t.advisor }}</p>
+          {% endif %}
+
+          {% if t.pdf %}
+          <a href="{{ t.pdf | relative_url }}" target="_blank" class="btn btn-outline-primary btn-sm mt-2">
+            Read Thesis
+          </a>
+          {% endif %}
+        </article>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,723 @@
+/*--------------------------------------------------------------
+# Global Page Titles & Breadcrumbs
+--------------------------------------------------------------*/
+.page-title {
+  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 25px 0;
+  position: relative;
+}
+
+.page-title a {
+  text-decoration: underline;
+}
+
+.page-title h1 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 100px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+
+  section,
+  .section {
+    scroll-margin-top: 66px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: 50vh;
+  position: relative;
+  padding: 0 0 60px 0;
+  display: flex;
+  align-items: center;
+  background: url("../img/hero-img.png") center center;
+  background-size: cover;
+}
+
+.hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 80px;
+  font-weight: 300;
+}
+
+.hero h1 span {
+  color: var(--accent-color);
+}
+
+.hero span {
+  color: var(--accent-color);
+}
+
+.subtitle {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin: 5px 0 0 0;
+  font-size: 30px;
+}
+
+.hero .animated {
+  margin-bottom: 60px;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (min-width: 992px) {
+  .hero .animated {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero .animated {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero .animated {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/*--------------------------------------------------------------
+# Featured Services Section
+--------------------------------------------------------------*/
+.values .value-item {
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  height: 100%;
+}
+
+.values .value-item .icon {
+  margin-bottom: 10px;
+}
+
+.values .value-item .icon i {
+  color: var(--accent-color);
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.values .value-item h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.values .value-item h4 a {
+  color: var(--heading-color);
+  transition: ease-in-out 0.3s;
+}
+
+.values .value-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.values .value-item:hover {
+  transform: translateY(-10px);
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+}
+
+.values .value-item:hover h4 a {
+  color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .about-img {
+  position: relative;
+  margin: 60px 0 0 60px;
+}
+
+.about span {
+  color: var(--accent-color);
+}
+
+.about .about-img:before {
+  position: absolute;
+  inset: -60px 0 0 -60px;
+  content: "";
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.about .about-img img {
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+@media (max-width: 575px) {
+  .about .about-img {
+    margin: 30px 0 0 30px;
+  }
+
+  .about .about-img:before {
+    inset: -30px 0 0 -30px;
+  }
+}
+
+.about h2 {
+  font-weight: 300;
+  font-size: 45px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.about .section-title p {
+  font-size: 1.2rem;
+  padding: 1rem 0 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .about h3 {
+    font-size: 28px;
+  }
+}
+
+.about .nav-pills {
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.about .nav-pills li+li {
+  margin-left: 40px;
+}
+
+.about .nav-link {
+  background: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--default-color);
+  padding: 12px 0;
+  margin-bottom: -2px;
+  border-radius: 0;
+}
+
+.about .nav-link.active {
+  color: var(--accent-color);
+  background: none;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+@media (max-width: 575px) {
+  .about .nav-link {
+    font-size: 16px;
+  }
+}
+
+.about .tab-content h4 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--default-color);
+}
+
+.about .tab-content i {
+  font-size: 22px;
+  line-height: 0;
+  margin-right: 8px;
+  color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Spotlights Section
+--------------------------------------------------------------*/
+.spotlights {
+  padding: 20px 0;
+}
+
+.spotlights .spotlight-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.spotlights .spotlight-logo img {
+  padding: 20px 40px;
+  max-width: 90%;
+  transition: 0.3s;
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.spotlights .spotlight-logo img:hover {
+  filter: none;
+}
+
+@media (max-width: 640px) {
+  .spotlights .spotlight-logo img {
+    padding: 20px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Onfocus Section
+--------------------------------------------------------------*/
+
+.onfocus .video-play {
+  min-height: 400px;
+  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), color-mix(in srgb, var(--background-color), transparent 75%)), url("../img/onfocus-video-bg.jpg") center center;
+  background-size: cover;
+}
+
+.onfocus .content {
+  /* background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), color-mix(in srgb, var(--background-color), transparent 75%)), url("../img/onfocus-content-bg.jpg") center center; */
+  background-size: cover;
+  padding: 40px;
+}
+
+@media (min-width: 768px) {
+  .onfocus .content {
+    padding: 20px;
+  }
+}
+
+.onfocus .content h3 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.onfocus .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.onfocus .content ul li {
+  padding-bottom: 10px;
+}
+
+.onfocus .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--accent-color);
+}
+
+.onfocus .content p:last-child {
+  margin-bottom: 0;
+}
+
+.onfocus .content .read-more {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: -nline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-color);
+  background: var(--accent-color);
+}
+
+.onfocus .content .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.onfocus .content .read-more:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
+  padding-right: 19px;
+}
+
+.onfocus .content .read-more:hover i {
+  margin-left: 10px;
+}
+
+.onfocus .pulsating-play-btn {
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+}
+
+/*--------------------------------------------------------------
+# open-roles Section
+--------------------------------------------------------------*/
+.open-roles .nav-tabs {
+  border: 0;
+}
+
+.open-roles .nav-link {
+  background-color: var(--surface-color);
+  color: var(--color-secondary);
+  border: 0;
+  padding: 25px 20px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0s;
+  cursor: pointer;
+  height: 100%;
+}
+
+.open-roles .nav-link i {
+  font-size: 32px;
+  line-height: 0;
+}
+
+.open-roles .nav-link h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+}
+
+.open-roles .nav-link:hover {
+  color: var(--accent-color);
+}
+
+.open-roles .nav-link:hover,
+.open-roles .nav-link.active {
+  transition: 0.3s;
+  background: var(--accent-color);
+  color: var(--contrast-color) !important;
+  border-color: var(--accent-color);
+}
+
+.open-roles .nav-link:hover h4,
+.open-roles .nav-link.active h4 {
+  color: var(--contrast-color);
+}
+
+.open-roles .nav-link:hover i,
+.open-roles .nav-link.active i {
+  color: var(--contrast-color) !important;
+}
+
+.open-roles .tab-content {
+  margin-top: 30px;
+}
+
+.open-roles .tab-pane.active {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.open-roles .tab-pane h3 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.open-roles .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.open-roles .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.open-roles .tab-pane ul i {
+  font-size: 24px;
+  margin-right: 4px;
+  color: var(--accent-color);
+}
+
+.open-roles .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Faq Section
+--------------------------------------------------------------*/
+.faq .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.faq .content p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.faq .faq-container {
+  margin-top: 15px;
+}
+
+.faq .faq-container .faq-item {
+  background-color: var(--surface-color);
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq .faq-container .faq-item h3 {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0 30px 0 32px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq .faq-container .faq-item h3 span {
+  color: var(--accent-color);
+  padding-right: 5px;
+}
+
+.faq .faq-container .faq-item h3:hover {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-item .faq-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item .faq-icon {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  font-size: 22px;
+  line-height: 0;
+  transition: 0.3s;
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-active h3 {
+  color: var(--accent-color);
+}
+
+.faq .faq-container .faq-active .faq-content {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg);
+  color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team .team-member .member-img {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.member-img img {
+  height: 400px;
+  width: 400px;
+}
+
+.team .team-member .social {
+  position: absolute;
+  left: 0;
+  top: -18px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .team-member .social a {
+  transition: color 0.3s;
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  margin: 0 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.team .team-member .social a i {
+  line-height: 0;
+  font-size: 16px;
+}
+
+.team .team-member .social a:hover {
+  background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
+}
+
+.team .team-member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .team-member .member-info {
+  background-color: var(--surface-color);
+  padding: 30px 15px;
+  text-align: center;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background: var(--surface-color);
+  margin: -50px 20px 0 20px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.team .team-member .member-info h4 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.team .team-member .member-info span {
+  display: block;
+  font-size: 16px;
+  font-weight: 250;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.team .team-member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.team .team-member:hover .social {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info {
+  background-color: var(--surface-color);
+  padding: 40px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.contact .info h3 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.contact .info p {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.contact .info-item+.info-item {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.contact .info-item i {
+  font-size: 24px;
+  color: var(--accent-color);
+  transition: all 0.3s ease-in-out;
+  margin-right: 20px;
+}
+
+.contact .info-item h4 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}

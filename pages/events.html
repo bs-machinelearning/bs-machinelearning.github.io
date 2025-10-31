@@ -1,0 +1,44 @@
+---
+layout: default
+title: Events
+permalink: /events/
+---
+
+<main class="main">
+
+  <section id="blog-posts" class="blog-posts section">
+    <div class="container">
+      <div id="events-container" class="row">
+
+        {% assign events = site.events | sort: "date" | reverse %}
+        {% for e in events %}
+        <div class="blog-post col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-in">
+          <article>
+
+            <div class="post-img">
+              <a href="{{ e.url | relative_url }}">
+                {% if e.main_image %}
+                <img src="{{ e.main_image | relative_url }}" alt="{{ e.title }}" class="img-fluid">
+                {% endif %}
+              </a>
+            </div>
+
+            <p class="post-category">
+              <time datetime="{{ e.date | date_to_xmlschema }}">
+                {{ e.date | date: "%B %d, %Y" }}
+              </time>
+            </p>
+
+            <h2 class="title">
+              <a href="{{ e.url | relative_url }}">{{ e.title }}</a>
+            </h2>
+
+          </article>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+
+</main>

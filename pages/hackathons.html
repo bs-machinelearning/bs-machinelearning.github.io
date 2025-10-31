@@ -1,0 +1,44 @@
+---
+layout: default
+title: BSML | Hackathons
+permalink: /hackathons/
+---
+
+<main class="main">
+
+  <section id="blog-posts" class="blog-posts section">
+    <div class="container">
+      <div id="hackathons-container" class="row">
+
+        {% assign hackathons = site.hackathons | sort: "date" | reverse %}
+        {% for h in hackathons %}
+        <div class="blog-post col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-in">
+          <article>
+
+            <div class="post-img">
+              <a href="{{ h.url | relative_url }}">
+                {% if h.main_image %}
+                <img src="{{ h.main_image | relative_url }}" alt="{{ h.title }}" class="img-fluid">
+                {% endif %}
+              </a>
+            </div>
+
+            <p class="post-category">
+              <time datetime="{{ h.date | date_to_xmlschema }}">
+                {{ h.date | date: "%B %d, %Y" }}
+              </time>
+            </p>
+
+            <h2 class="title">
+              <a href="{{ h.url | relative_url }}">{{ h.title }}</a>
+            </h2>
+
+          </article>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+
+</main>

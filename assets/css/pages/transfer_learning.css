@@ -1,0 +1,239 @@
+/* -------------- */
+/* Start of stuff for transfer learning page */
+.highlight-link {
+  color: #6600cc;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* keep it purple during click/keyboard focus and once opened */
+.box-title-btn:active,
+.box-title-btn:hover,
+.box-title-btn:focus,
+.box-title-btn:focus-visible,
+.box-title-btn[aria-expanded="true"] {
+  color: #6600cc !important;
+}
+
+/* Marble-style purple/white background */
+.card {
+  background: linear-gradient(135deg, rgba(240, 230, 255, 0.6), rgba(255, 255, 255, 0.9)),
+    url('https://www.transparenttextures.com/patterns/marble.png');
+  background-size: cover;
+  background-blend-mode: lighten;
+  border-radius: 12px;
+}
+
+/* Box titles */
+.box-title-btn {
+  color: #6600cc;
+  font-size: 1.7rem;
+}
+
+/* Extra info row inside the button */
+.box-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-extra-text a {
+  color: #000000;
+}
+
+.box-extra-text a:hover {
+  color: #4b0082;
+}
+
+.box-extra-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* a bit bolder */
+  color: #000000;
+}
+
+/* this defines the images sizes and borders on phones */
+.box-extra-images img {
+  height: 80px;
+  width: auto;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* this defines the images sizes and borders on computers and tablets */
+@media (min-width: 768px) {
+  .box-extra-images img {
+    height: 80px;
+    width: auto;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pad-bottom {
+    min-height: 200px;
+  }
+}
+
+.fancy-list {
+  list-style: none;
+  /* Remove default bullets */
+  padding-left: 1.2em;
+}
+
+.fancy-list li::before {
+  content: "★";
+  color: #6600cc;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.2em;
+}
+
+/* Container max-width constraint for transfer learning grid */
+#rej-grid .container {
+  max-width: 1200px;
+  /* Ensure cards don't become too wide on very large screens */
+}
+
+/* Transfer Learning Card Structure */
+.transfer-card {
+  min-height: 280px;
+  /* Ensure consistent height */
+  display: flex;
+  flex-direction: column;
+}
+
+.transfer-card .box-title-btn {
+  flex: 1;
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: center !important;
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.transfer-card .box-title-btn:focus,
+.transfer-card .box-title-btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Header row with title and badge */
+.card-header-row {
+  width: 100%;
+  border-bottom: 1px solid rgba(102, 0, 204, 0.1);
+}
+
+.card-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #6600cc;
+}
+
+.card-header-row .badge {
+  font-size: 1rem !important;
+  padding: 8px 12px !important;
+  font-weight: 600 !important;
+}
+
+/* Center content area */
+.card-center-content {
+  flex: 1;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  min-height: 120px;
+  padding: 15px 20px;
+  width: 100% !important;
+}
+
+.associates-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 15px 0 !important;
+  text-align: center !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+.associates-text a {
+  color: #6600cc;
+  text-decoration: underline;
+}
+
+.associates-text a:hover {
+  color: #4b0082;
+}
+
+/* Company logos styling */
+.company-logos {
+  min-height: 60px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  text-align: center !important;
+  gap: 10px;
+  margin: 0 auto !important;
+}
+
+.company-logos img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  margin: 5px;
+  display: inline-block;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .company-logos img {
+    height: 70px;
+    margin: 8px;
+  }
+}
+
+/* End of stuff for transfer learning page */
+/* -------------- */
+
+/* Spotlights subtitles + divider */
+.spotlight-subtitle {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #6600cc;
+  margin: .25rem 0 1rem;
+  text-align: center
+}
+
+.spotlight-divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, .18);
+  width: 220px;
+  margin: 1rem auto 1.25rem
+}
+
+.supervisor-disclaimer {
+  color: #555;
+  font-size: 0.97rem;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: var(--contrast-color);
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-color);
+}
+
+.supervisor-disclaimer .bi-info-circle {
+  color: var(--accent-color);
+  font-size: 1.2em;
+}
