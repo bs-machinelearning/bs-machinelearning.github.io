@@ -1,9 +1,9 @@
 ---
-title: "Escape The Challenge"
-main_image: "/assets/img/events/hackathonbcgx_1.jpg"
+title: "Startup Competition"
+main_image: "/assets/img/events/hacklab-25-26.jpeg"
 location: "Milan, Italy"
-date: 2025-02-20
-end_date: 2025-06-16
+date: 2025-09-21
+end_date: 2025-12-31
 ---
 
 **Escape The Challenge** is a semester-long Data Science and Entrepreneurship competition co-organized with *theHackLab Bocconi Students*.
@@ -26,9 +26,8 @@ On **May 16**, we hosted the final event — and the teams truly impressed!
 Huge congratulations to **“Churn Down for What”** and **“Uni Market”** for winning the **Data** and **Entrepreneur** tracks, respectively.
 
 <div class="col-lg-12 d-flex justify-content-center event-gallery">
-    <img src="/assets/img/events/bcg_winner_data.JPG" style="max-width: 40%;" alt="" class="img-fluid">
-    <img src="/assets/img/events/hackathonbcgx_1.jpg" style="max-width:20%;" alt="" class="img-fluid">
-    <img src="/assets/img/events/bcg_winner_business.JPG" style="max-width:40%;" alt="" class="img-fluid">
+    <img src="/assets/img/events/hacklab-25-26-2.jpg" style="max-width:50%;" alt="" class="img-fluid">
+    <img src="/assets/img/events/hacklab-25-26.jpeg" style="max-width:30%;" alt="" class="img-fluid">
 </div>
 
 

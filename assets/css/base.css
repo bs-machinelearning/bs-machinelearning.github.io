@@ -171,3 +171,12 @@ h6 {
 .btn-custom-gradient:focus {
   background: var(--purple-gradient);
 }
+
+/*--------------------------------------------------------------
+# Custom Button with purple gradient
+--------------------------------------------------------------*/
+.text-link {
+  text-decoration: underline;
+  font-style: italic;
+  color: var(--default-color);
+}

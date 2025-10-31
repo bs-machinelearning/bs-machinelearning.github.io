@@ -4,6 +4,7 @@ url: https://bsmachinelearning.com
 
 markdown: kramdown
 permalink: pretty
+future: true
 
 collections:
   projects:
