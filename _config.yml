@@ -18,6 +18,8 @@ collections:
   theses:
     output: true
     permalink: /theses/:name/
+  spotlights:
+    output: false
 
 # Auto-apply layouts to collection items (uses filenames in _layouts/)
 defaults:

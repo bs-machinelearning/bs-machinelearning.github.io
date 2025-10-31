@@ -452,81 +452,23 @@ permalink: /index.html
   </div>
 
   <div class="container" data-aos="fade-up">
-    <div class="row gy-4">
-      <!-- Tech & Banks -->
-      <div class="col-12">
-        <h3 class="spotlight-subtitle">Tech &amp; Banks</h3>
+    {% assign categories = site.spotlights | map: "category" | uniq %}
+    {% for cat in categories %}
+      <div class="row gy-4">
+        <div class="col-12">
+          {% if cat != "" %}
+            {% unless forloop.first %}<hr class="spotlight-divider">{% endunless %}
+            <h3 class="spotlight-subtitle">{{ cat }}</h3>
+          {% endif %}
+        </div>
+        {% assign items = site.spotlights | where: "category", cat %}
+        {% for item in items %}
+          <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
+            <img src="{{ item.logo }}" alt="{{ item.name }}">
+          </div>
+        {% endfor %}
       </div>
-
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/google.webp" alt="Google">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/amazon.jpg" alt="Amazon">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/bending_spoons.png" alt="Bending Spoons">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/revolut.png" alt="Revolut">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/goldman.jpg" alt="Goldman Sachs">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/citi.jpg" alt="Citi">
-      </div>
-
-      <!-- Quant Finance -->
-      <div class="col-12">
-        <hr class="spotlight-divider">
-        <h3 class="spotlight-subtitle">Quantitative Finance</h3>
-      </div>
-
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/jane_street.png" alt="Jane Street">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/point72.png" alt="Point72">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/five_rings.png" alt="Five Rings">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/flow_traders.png" alt="Flow Traders">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/balyasny.png" alt="Balyasny">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/cfm.png" alt="Capital Fund Management">
-      </div>
-
-      <!-- Universities -->
-      <div class="col-12">
-        <hr class="spotlight-divider">
-        <h3 class="spotlight-subtitle">Universities</h3>
-      </div>
-
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/client-10.png" alt="University logo 1">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/client-11.jpg" alt="University logo 2">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/client-7.jpg" alt="University logo 3">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/client-6.jpg" alt="University logo 4">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/client-4.jpg" alt="University logo 5">
-      </div>
-      <div class="col-xl-2 col-md-3 col-6 spotlight-logo">
-        <img src="assets/img/spotlights/uchicago.png" alt="University of Chicago">
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </section>
 
@@ -627,7 +569,7 @@ permalink: /index.html
         </div>
       </div>
 
-      <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in">
+      <!-- <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in">
         <div class="team-member">
           <div class="member-img">
             <img src="assets/img/team/alessandro_bellini.jpg" class="img-fluid" alt="Alessandro Bellini">
@@ -641,7 +583,7 @@ permalink: /index.html
             <span>MSc in Artificial Intelligence @ Bocconi University</span>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in">
         <div class="team-member">
