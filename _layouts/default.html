@@ -57,6 +57,16 @@
     {{ content }}
   </main>
 
+  <!-- MathJax for LaTeX rendering -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <!-- ======= Footer ======= -->
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer text-light" style="
