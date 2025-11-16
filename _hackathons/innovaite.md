@@ -6,7 +6,7 @@ date: 2025-11-29
 end_date: 2025-11-30
 ---
 
-we’re proud to announce **INNOVAITE**, the first Hackathon organized by several Bocconi associations!!
+We’re proud to announce **INNOVAITE**, the first Hackathon organized by several Bocconi associations!!
 
 Some spoilers:
 - 24h overnight building
