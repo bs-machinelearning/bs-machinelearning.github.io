@@ -9,10 +9,10 @@ end_date: 2025-11-30
 We’re proud to announce **INNOVAITE**, the first Hackathon organized by several Bocconi associations!!
 
 Some spoilers:
-- 24h overnight building
-- money prizes
-- free food for participants
-- a jury composed of experts from our sponsoring partners
+- 24h Overnight building
+- Money prizes
+- Free food for participants
+- A jury composed of experts from our sponsoring partners
 
 What you’ll need: a team of 5 people from whatever background, a free weekend and to be willing to create the next AI killer application!
 
