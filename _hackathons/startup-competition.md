@@ -6,9 +6,9 @@ date: 2025-09-21
 end_date: 2025-12-31
 ---
 
-**Escape The Challenge** is a semester-long Data Science and Entrepreneurship competition co-organized with *theHackLab Bocconi Students*.
+**Escape The Challenge** is a semester-long Data Science and Entrepreneurship competition co-organized with [theHackLab Bocconi Students](https://thehacklab.org/).
 
-Participants presented their solutions to judges from *BCG X* and *Bocconi for Innovation (B4i)*, gaining valuable feedback and insights.
+Participants presented their solutions to judges from [BCG X](https://www.bcg.com/x/) and [Bocconi for Innovation (B4i)](https://www.b4i.unibocconi.it/), gaining valuable feedback and insights.
 
 Push your limits and compete in one of two tracks:
 
