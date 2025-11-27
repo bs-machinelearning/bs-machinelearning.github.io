@@ -32,6 +32,11 @@
   overflow: hidden;
 }
 
+#events-container .blog-post .post-img,
+#hackathons-container .blog-post .post-img {
+  height: 75%;
+}
+
 .blog-posts .post-img img {
   width: 110%;
   height: 100%;
