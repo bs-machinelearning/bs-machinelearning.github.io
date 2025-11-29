@@ -305,3 +305,15 @@
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-bottom: 0;
 }
+/*--------------------------------------------------------------
+# Ongoing Badge
+--------------------------------------------------------------*/
+.badge-ongoing {
+  background-color: var(--accent-color);
+  color: var(--default-color);
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  margin-left: 0.5rem;
+}
