@@ -40,10 +40,12 @@ permalink: /projects/
                 <span class="badge badge-ongoing">Ongoing</span>
                 {% endif %}
               </p>
+              {% unless p.status == 'ongoing' %}
               <p class="post-date">
                 <time id="project-date" datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%B %-d, %Y"
                   }}</time>
               </p>
+              {% endunless %}
             </div>
 
             <h2 class="title">
