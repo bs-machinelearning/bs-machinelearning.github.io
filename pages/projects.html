@@ -23,7 +23,7 @@ permalink: /projects/
 <section id="blog-posts" class="blog-posts section">
   <div class="container">
     <div class="row gy-4" id="project-container">
-      {% assign items = site.projects | sort: "id" | reverse %}
+      {% assign items = site.projects | sort: "date" | reverse %}
       {% for p in items %}
       <div class="blog-post col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 project-card" data-aos="zoom-in"
         data-aos-delay="{{ forloop.index0 | times: 50 }}">
@@ -60,11 +60,8 @@ permalink: /projects/
                 {% for a in p.authors %}
                 <div class="author-template col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                   <div class="d-flex flex-row align-content-center author-card">
-                    {% assign avatar = a.avatar | default: a.img %}
-                    {% if avatar %}
-                    <img class="author-img img-fluid post-author-img flex-shrink-0" src="{{ avatar | relative_url }}"
+                    <img class="author-img img-fluid post-author-img flex-shrink-0" src="{{ a.avatar | default: '/assets/img/black_bg.png' | relative_url }}"
                       alt="{{ a.name }}">
-                    {% endif %}
                     <div class="d-flex flex-column justify-content-center align-content-center">
                       <p class="post-author">
                         {% if a.link %}
