@@ -23,9 +23,13 @@ layout: default
             <div id="author-names-date" class="meta-top d-flex flex-column align-items-center text-center">
               <div class="d-flex align-items-center mb-2 justify-content-center">
                 <i class="bi bi-clock"></i>
-                <time id="project-date" datetime="{{ page.date | date_to_xmlschema }}" class="ms-1">
-                  {{ page.date | date: "%B %d, %Y" }}
-                </time>
+                  <time id="project-date" datetime="{{ page.date | date_to_xmlschema }}" class="ms-1">
+                    {% if page.status != "ongoing" %}
+                      {{ page.date | date: "%B %d, %Y" }}
+                    {% else %}
+                      Ongoing
+                    {% endif %}
+                  </time>
               </div>
               {% if page.authors %}
               <ul id="authors-list"
