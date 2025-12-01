@@ -21,6 +21,10 @@ authors:
     avatar: "/assets/img/team/andrea_lisci.jpg"
     link: "https://www.linkedin.com/in/andrea-lisci"
     desc: "MSc in Data Science"
+  - name: "Alessandro Procoli"
+    avatar: "/assets/img/team/alessandro_procoli.jpg"
+    link: "https://www.linkedin.com/in/alessandro-procoli"
+    desc: "MSc in Finance"
 ---
 
 
