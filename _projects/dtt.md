@@ -2,6 +2,7 @@
 title: Digital Twin of a Tumor
 type: Research
 status: ongoing
+date: 2025-12-01
 cover: /assets/img/proj/dtt_1.png
 authors:
   - name: "Roberta Claps"
