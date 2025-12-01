@@ -72,10 +72,8 @@ layout: default
             {% for a in page.authors %}
             <div class="author-profile-template d-flex flex-column align-items-center text-center p-4"
               style="flex: 1 1 220px; max-width: 260px;">
-              {% if a.avatar %}
-              <img class="author-img rounded-circle mb-3" src="{{ a.avatar }}" alt="{{ a.name }}"
+              <img class="author-img rounded-circle mb-3" src="{{ a.avatar | default: '/assets/img/black_bg.png' }}" alt="{{ a.name }}"
                 style="width:140px;height:140px;object-fit:cover;">
-              {% endif %}
               <h4 class="author-name mb-2">{{ a.name }}</h4>
               <div class="social-links mb-2">
                 {% if a.link %}

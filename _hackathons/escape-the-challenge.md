@@ -20,8 +20,6 @@ Push your limits and compete in one of two tracks:
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSf866lN5H1gNN5Mxx0uI_x936A52IiQ5jn1dC8ZXKEGZgyLtA/closedform" target="_blank" class="btn-custom">Apply</a>
 </div>
 
-<p></p>
-
 On **May 16**, we hosted the final event — and the teams truly impressed!  
 Huge congratulations to **“Churn Down for What”** and **“Uni Market”** for winning the **Data** and **Entrepreneur** tracks, respectively.
 
