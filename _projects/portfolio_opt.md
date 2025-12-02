@@ -1,4 +1,4 @@
-﻿---
+---
 title: Portfolio Optimisation
 type: Research
 status: ongoing
