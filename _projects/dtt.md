@@ -21,13 +21,17 @@ authors:
     avatar: "/assets/img/team/andrea_lisci.jpg"
     link: "https://www.linkedin.com/in/andrea-lisci"
     desc: "MSc in Data Science"
+  - name: "Alessandro Procoli"
+    avatar: "/assets/img/team/alessandro_procoli.jpg"
+    link: "https://www.linkedin.com/in/alessandro-procoli"
+    desc: "MSc in Finance"
 ---
 
 
 We are developing a computational replica to model tumor growth, evolution, and response to treatment using predictive modeling.
 
 <div class="d-flex align-items-center justify-content-around">
-  <a href="/assets/reports/Paper_pallet_bsml.pdf" class="btn-custom">Project Proposal</a>
+  <a href="/assets/reports/DTT.pdf" class="btn-custom">Project Proposal</a>
 </div>
 <br>
 Focusing on combining biological, clinical, and molecular data to build a simulation model of disease dynamics that can capture how a condition evolves over time under different therapies, enabling personalized risk assessment and treatment prediction.
