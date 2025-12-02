@@ -6,7 +6,7 @@ date: 2025-12-02
 cover: /assets/img/proj/portfolio_opt_1.jpg
 authors:
   - name: "Kuzey Mentese"
-    avatar: "assets/img/team/kuzey_mentese.jpeg"
+    avatar: "/assets/img/team/kuzey_mentese.jpeg"
     link: "https://www.linkedin.com/in/kuzey-mente%C5%9Fe-12b9a1327/"
     desc: "BSc in Economics and Computer Science"
   - name: "Roberta Claps"
