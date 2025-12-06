@@ -25,6 +25,10 @@ authors:
     avatar: "/assets/img/team/alessandro_procoli.jpg"
     link: "https://www.linkedin.com/in/alessandro-procoli"
     desc: "MSc in Finance"
+  - name: "Eylül Erçin"
+    avatar: "/assets/img/team/eylul_ercin.jpg"
+    link: "https://www.linkedin.com/in/eyl%C3%BCl-er%C3%A7in-9587232a4/"
+    desc: "BSc in Mathematical and Computing Sciences for AI"
 ---
 
 
