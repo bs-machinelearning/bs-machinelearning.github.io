@@ -13,6 +13,34 @@
   font-size: 0.8rem;
 }
 
+.project-card .more-authors-card {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  transition: background 0.3s ease;
+}
+
+.project-card .more-authors-card:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.project-card .more-authors-card .author-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  line-height: 1.1;
+}
+
 /* --- Improved Author Card Styling --- */
 .author-container {
   display: flex;

@@ -57,23 +57,54 @@ permalink: /projects/
             <div class="container">
               <div id="project-authors" class="post-meta row">
                 {% if p.authors %}
-                {% for a in p.authors %}
-                <div class="author-template col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                  <div class="d-flex flex-row align-content-center author-card">
-                    <img class="author-img img-fluid post-author-img flex-shrink-0" src="{{ a.avatar | default: '/assets/img/black_bg.png' | relative_url }}"
-                      alt="{{ a.name }}">
-                    <div class="d-flex flex-column justify-content-center align-content-center">
-                      <p class="post-author">
-                        {% if a.link %}
-                        <a class="author-link" href="{{ a.link }}" target="_blank">{{ a.name }}</a>
-                        {% else %}
-                        <a class="author-link" href="#" target="_blank">{{ a.name }}</a>
-                        {% endif %}
-                      </p>
+                {% assign author_count = p.authors.size %}
+                {% if author_count > 4 %}
+                  {% for a in p.authors limit:3 %}
+                  <div class="author-template col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <div class="d-flex flex-row align-content-center author-card">
+                      <img class="author-img img-fluid post-author-img flex-shrink-0" src="{{ a.avatar | default: '/assets/img/black_bg.png' | relative_url }}"
+                        alt="{{ a.name }}">
+                      <div class="d-flex flex-column justify-content-center align-content-center">
+                        <p class="post-author">
+                          {% if a.link %}
+                          <a class="author-link" href="{{ a.link }}" target="_blank">{{ a.name }}</a>
+                          {% else %}
+                          <a class="author-link" href="#" target="_blank">{{ a.name }}</a>
+                          {% endif %}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                {% endfor %}
+                  {% endfor %}
+                  <div class="author-template col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <div class="d-flex flex-row align-content-center author-card">
+                      <div class="more-authors-card">
+                        <a class="author-link" href="{{ p.url | relative_url }}#project-author">
+                          <i class="bi bi-plus-circle" style="font-size: 1.2rem;"></i>
+                          <span style="font-size: 0.65rem;">{{ author_count | minus: 3 }} more</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                {% else %}
+                  {% for a in p.authors %}
+                  <div class="author-template col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                    <div class="d-flex flex-row align-content-center author-card">
+                      <img class="author-img img-fluid post-author-img flex-shrink-0" src="{{ a.avatar | default: '/assets/img/black_bg.png' | relative_url }}"
+                        alt="{{ a.name }}">
+                      <div class="d-flex flex-column justify-content-center align-content-center">
+                        <p class="post-author">
+                          {% if a.link %}
+                          <a class="author-link" href="{{ a.link }}" target="_blank">{{ a.name }}</a>
+                          {% else %}
+                          <a class="author-link" href="#" target="_blank">{{ a.name }}</a>
+                          {% endif %}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                {% endif %}
                 {% endif %}
               </div>
             </div>
@@ -85,7 +116,11 @@ permalink: /projects/
 
     <div class="supervisor-disclaimer mt-4 mb-2">
       <i class="bi bi-info-circle"></i>
-      <span>Authors marked with * are supervisors.</span>
+      <span>Authors marked with * are project leads.</span>
+    </div>
+    <div class="supervisor-disclaimer mt-4 mb-2">
+      <i class="bi bi-info-circle"></i>
+      <span>Authors marked with ** are supervisors.</span>
     </div>
   </div>
 </section>

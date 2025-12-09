@@ -5,14 +5,14 @@ status: ongoing
 date: 2025-12-02
 cover: /assets/img/proj/portfolio_opt_1.jpg
 authors:
+  - name: "Roberta Claps*"
+    avatar: ""
+    link: "https://www.linkedin.com/in/roberta-claps-7277492b8/"
+    desc: "BSc in Mathematical and Computing Sciences for AI"
   - name: "Kuzey Mentese"
     avatar: "/assets/img/team/kuzey_mentese.jpeg"
     link: "https://www.linkedin.com/in/kuzey-mente%C5%9Fe-12b9a1327/"
     desc: "BSc in Economics and Computer Science"
-  - name: "Roberta Claps"
-    avatar: ""
-    link: "https://www.linkedin.com/in/roberta-claps-7277492b8/"
-    desc: "BSc in Mathematical and Computing Sciences for AI"
   - name: "Roberta Garofano"
     avatar: "/assets/img/team/roberta_garofano.jpeg"
     link: "https://www.linkedin.com/in/roberta-garofano-118552294/"

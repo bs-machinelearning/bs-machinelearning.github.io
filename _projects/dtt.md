@@ -5,7 +5,7 @@ status: ongoing
 date: 2025-12-01
 cover: /assets/img/proj/dtt_1.png
 authors:
-  - name: "Roberta Claps"
+  - name: "Roberta Claps*"
     avatar: ""
     link: "https://www.linkedin.com/in/roberta-claps-7277492b8/"
     desc: "BSc in Mathematical and Computing Sciences for AI"
