@@ -22,7 +22,7 @@ authors:
 buttons:
   - name: "Code"
     link: "https://github.com/alefrabel/saLM-1"
-  - name: "Report"
+  - name: "Full Paper"
     link: "/assets/reports/250625_saLM_1.pdf"
 ---
 
