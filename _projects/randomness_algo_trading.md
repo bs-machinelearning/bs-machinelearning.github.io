@@ -1,9 +1,9 @@
 ---
-title: Randomness in Algorithm Trading - BSML
+title: Randomness in Algorithm Trading
 type: Research
 status: completed
 date: 2025-12-09
-cover: /assets/img/black_bg.png
+cover: /assets/img/proj/algo_trading_cover.png
 authors:
   - name: "Vincenzo Della Ratta"
     avatar: ""
@@ -11,27 +11,27 @@ authors:
     desc: "Infrastructure, Pipeline, Backtesting"
   - name: "Preslav Georgiev"
     avatar: ""
-    link: "#"
+    link: "https://www.linkedin.com/in/preslav-georgiev-825bb7328"
     desc: ""
   - name: "Matteo Roda"
     avatar: ""
-    link: "#"
+    link: "https://www.linkedin.com/in/matteo-roda-017796254/"
     desc: ""
   - name: "Rayi Makori"
     avatar: ""
-    link: "https://www.linkedin.com/in/rayi-makori-3943b82b0/"
+    link: "https://www.linkedin.com/in/rayi-makori-3943b82b0"
     desc: "Project Lead"
   - name: "Hunor Csenteri"
     avatar: ""
-    link: "#"
+    link: "https://www.linkedin.com/in/hunor-csenteri"
     desc: ""
   - name: "Neel Roy"
     avatar: ""
-    link: "#"
+    link: "https://www.linkedin.com/in/neel-roy-338550292"
     desc: ""
   - name: "David Livshits"
     avatar: ""
-    link: "#"
+    link: "https://www.linkedin.com/in/david-livshits-185354382"
     desc: ""
 ---
 
