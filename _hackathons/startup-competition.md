@@ -1,6 +1,6 @@
 ---
 title: "Startup Competition"
-main_image: "/assets/img/events/hacklab-25-26.jpeg"
+main_image: "/assets/img/events/hacklab-25-26.jpg"
 location: "Milan, Italy"
 date: 2025-09-21
 end_date: 2025-12-31
@@ -27,7 +27,7 @@ Huge congratulations to **“Churn Down for What”** and **“Uni Market”** f
 
 <div class="col-lg-12 d-flex justify-content-center event-gallery">
     <img src="/assets/img/events/hacklab-25-26-2.jpg" style="max-width:50%;" alt="" class="img-fluid">
-    <img src="/assets/img/events/hacklab-25-26.jpeg" style="max-width:30%;" alt="" class="img-fluid">
+    <img src="/assets/img/events/hacklab-25-26.jpg" style="max-width:30%;" alt="" class="img-fluid">
 </div>
 
 
