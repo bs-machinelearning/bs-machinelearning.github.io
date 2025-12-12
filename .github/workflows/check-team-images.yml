@@ -1,0 +1,61 @@
+name: Check Team Image Names
+
+on:
+  push:
+    paths:
+      - 'assets/img/team/**'
+  pull_request:
+    paths:
+      - 'assets/img/team/**'
+
+jobs:
+  check-image-names:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check team image naming convention
+        run: |
+          #!/bin/bash
+          set -e
+          
+          TEAM_DIR="assets/img/team"
+          ERRORS=0
+          
+          echo "Checking image naming convention in $TEAM_DIR..."
+          echo "Expected format: firstname_lastname.jpg (or .jpeg, .png)"
+          echo ""
+          
+          # Pattern: one or more lowercase letters, underscore, one or more lowercase letters, 
+          # optionally more _name segments, then .jpg
+          VALID_PATTERN="^[a-z]+(_[a-z]+)+\.(jpg)$"
+          
+          for file in "$TEAM_DIR"/*; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file")
+              
+              if [[ ! "$filename" =~ $VALID_PATTERN ]]; then
+                echo "❌ Invalid: $filename"
+                echo "   Expected format: firstname_lastname.jpg (lowercase, underscores only)"
+                ERRORS=$((ERRORS + 1))
+              else
+                echo "✅ Valid: $filename"
+              fi
+            fi
+          done
+          
+          echo ""
+          if [ $ERRORS -gt 0 ]; then
+            echo "Found $ERRORS file(s) with invalid naming."
+            echo ""
+            echo "Naming convention rules:"
+            echo "  - Use lowercase letters only"
+            echo "  - Separate first and last name with underscore (_)"
+            echo "  - No hyphens, spaces, or special characters"
+            echo "  - Allowed extensions: .jpg"
+            echo "  - Example: john_doe.jpg"
+            exit 1
+          else
+            echo "All team images follow the naming convention! 🎉"
+          fi
