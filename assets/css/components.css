@@ -17,6 +17,10 @@
   flex-direction: column;
 }
 
+#blog-posts.section {
+  padding-top: 0rem;
+}
+
 .blog-posts article {
   background-color: var(--surface-color);
   box-shadow: 0 4px 25px rgba(102, 0, 204, 0.1);
