@@ -1,3 +1,39 @@
+#dl-starter .dl-starter-container {
+  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+  background-color: var(--background-color);
+  color: var(--default-color); 
+  padding: 1.5rem 1.75rem;
+}
+
+#dl-starter .resource-link {
+  border: 3px solid #343a40;
+  border-radius: 0.75rem;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+}
+
+#dl-starter .resource-link:hover {
+  transform: scale(1.03);
+  border-color: var(--accent-color);
+  color: var(--accent-color);       
+}
+
+#dl-starter svg {
+  width: 48px;
+  height: 48px;
+  fill: currentColor;
+}
+
+#dl-starter .resource-label {
+  margin-top: 0.4rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
 .project-card .post-meta p {
   margin: 0;
   padding: 0;
