@@ -5,6 +5,11 @@
   padding: 1.5rem 1.75rem;
 }
 
+#dl-starter .section-title {
+  padding-bottom: 1.5rem;
+}
+
+
 #dl-starter .resource-link {
   border: 3px solid #343a40;
   border-radius: 0.75rem;
