@@ -1,0 +1,79 @@
+# BSML Team Database
+# Structure: List of member dictionaries with first_name, last_name, linkedin, and membership history
+# 
+# Role options:
+#   - founder
+#   - president
+#   - vice-president
+#   - active-member
+#   - project-lead
+#   - board-member
+#
+# Academic Year (AY) format: YY-YY (e.g., 25-26 for 2025-2026)
+
+- first_name: Giacomo
+  last_name: Ciro
+  linkedin: https://linkedin.com/in/giacomo-ciro
+  membership:
+    - role: [vice-president, board-member]
+      AY: 25-26
+    - role: [vice-president, board-member]
+      AY: 24-25
+    - role: [founder, board-member]
+      AY: 23-24
+
+- first_name: Marco
+  last_name: Lomele
+  linkedin: https://www.linkedin.com/in/marco-lomele/
+  membership:
+    - role: [founder, board-member]
+      AY: 23-24
+
+- first_name: Giulio
+  last_name: Caputi
+  linkedin: https://www.linkedin.com/in/giulio-caputi/
+  membership:
+    - role: [founder, board-member]
+      AY: 23-24
+
+- first_name: Alessandro
+  last_name: Morosini
+  linkedin: https://www.linkedin.com/in/alessandro-morosini/
+  membership:
+    - role: [founder, board-member]
+      AY: 23-24
+
+- first_name: Francesco
+  last_name: Vacca
+  linkedin: https://www.linkedin.com/in/francescoovacca/
+  membership:
+    - role: [founder, board-member]
+      AY: 23-24
+
+- first_name: Costanza
+  last_name: D'Ercole
+  linkedin: https://www.linkedin.com/in/costanzadercole/
+  membership:
+    - role: [founder, board-member]
+      AY: 23-24
+
+- first_name: Laura
+  last_name: Valente
+  linkedin: https://www.linkedin.com/in/laura-valente-757348234/
+  membership:
+    - role: [founder, board-member]
+      AY: 23-24
+
+- first_name: Tancredi
+  last_name: Dorsi
+  linkedin: https://www.linkedin.com/in/tancredidorsi/
+  membership:
+    - role: [founder, board-member]
+      AY: 23-24
+
+- first_name: Rocco
+  last_name: Totaro
+  linkedin: https://www.linkedin.com/in/roccototaro/
+  membership:
+    - role: [founder, board-member]
+      AY: 23-24

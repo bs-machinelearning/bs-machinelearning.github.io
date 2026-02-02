@@ -34,7 +34,8 @@
           <li><a href="{{ '/' | relative_url }}#hero" class="{% if page.url == '/' %}active{% endif %}">Home</a></li>
           <li><a href="{{ '/' | relative_url }}#about">About</a></li>
           <li><a href="{{ '/' | relative_url }}#faq">FAQ</a></li>
-          <li><a href="{{ '/' | relative_url }}#team">Founders</a></li>
+          <li><a href="{{ '/team/' | relative_url }}"
+              class="{% if page.url contains '/team/' %}active{% endif %}">Team</a></li>
           <li><a href="{{ '/projects/' | relative_url }}"
               class="{% if page.url contains '/projects/' %}active{% endif %}">Projects</a></li>
           <li><a href="{{ '/events/' | relative_url }}"
