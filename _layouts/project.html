@@ -15,7 +15,7 @@ layout: default
           <article class="article">
 
             <div class="post-img">
-              <img src="{{ page.cover }}" alt="{{ page.title }}">
+              <img src="{{ page.header_image | default: page.cover }}" alt="{{ page.title }}">
             </div>
 
             <h2 id="project-title" class="title text-center">{{ page.title }}</h2>
