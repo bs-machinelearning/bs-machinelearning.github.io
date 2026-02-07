@@ -3,7 +3,8 @@ title: "LLM validity via enhanced conformal prediction: conditional guarantees, 
 type: Research
 status: completed
 date: 2026-02-07
-cover: /assets/img/proj/llm_validity_cropped.png
+cover: /assets/img/proj/llm_validity.png
+header_image: /assets/img/proj/llm_validity_cropped.png
 authors:
   - name: "Davide Beltrame"
     avatar: "/assets/img/team/davide_beltrame.jpg"
