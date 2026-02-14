@@ -2,7 +2,7 @@
 title: Empathy in Multi-Agent Reinforcement Learning
 type: Research
 status: Completed
-date: 2025-12-21
+date: 2026-01-25
 authors:
   - name: Christina Eirini Christodoulou
     avatar: /assets/img/team/christina_christodoulou.png
