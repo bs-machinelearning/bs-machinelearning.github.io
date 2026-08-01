@@ -1,0 +1,196 @@
+---
+layout: default
+title: BSML | Team
+body_class: team-page
+permalink: /team/
+---
+
+<!-- Team Page Header -->
+<section id="team-header" class="team section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Team</h2>
+    <p>Celebrating the minds behind BSML</p>
+  </div>
+</section>
+
+{% comment %}
+  Logic:
+  1. Collect all unique Academic Years (AY) from all members
+  2. For each AY, categorize members into:
+     - Executive Board (president, vice-president)
+     - Founders (founder role)
+     - Project Leads (project-lead role)
+     - Active Members (active-member role)
+{% endcomment %}
+
+{% comment %} Collect all years {% endcomment %}
+{% assign all_years = "" | split: "" %}
+{% for member in site.data.team %}
+  {% for membership in member.membership %}
+    {% unless all_years contains membership.AY %}
+      {% assign all_years = all_years | push: membership.AY %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+{% assign all_years = all_years | sort | reverse %}
+
+<!-- Current Executive Board -->
+<section id="current-board" class="team section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Current Executive Board</h2>
+    <p>Academic Year {{ all_years | first }}</p>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <div class="row gy-5">
+      {% assign current_year = all_years | first %}
+      {% for member in site.data.team %}
+        {% assign current_membership = member.membership | where: "AY", current_year | first %}
+        {% if current_membership %}
+          {% assign roles = current_membership.role %}
+          {% if roles contains "president" or roles contains "vice-president" %}
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in">
+              <div class="team-member">
+                <div class="member-img">
+                  {% assign img_name = member.first_name | append: "_" | append: member.last_name | downcase | replace: "'", "" | replace: " ", "_" %}
+                  <img src="/assets/img/team/{{ img_name }}.jpg" class="img-fluid" alt="{{ member.first_name }} {{ member.last_name }}">
+                </div>
+                <div class="member-info">
+                  <div class="social">
+                    <a href="{{ member.linkedin }}" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                  <h4>{{ member.first_name }} {{ member.last_name }}</h4>
+                  <span>
+                    {% if roles contains "president" %}President{% endif %}
+                    {% if roles contains "vice-president" %}Vice President{% endif %}
+                  </span>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Founders -->
+<section id="founders" class="team section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Founders</h2>
+    <p>The visionaries who started it all</p>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <div class="row gy-5">
+      {% for member in site.data.team %}
+        {% assign is_founder = false %}
+        {% for membership in member.membership %}
+          {% if membership.role contains "founder" %}
+            {% assign is_founder = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% if is_founder %}
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in">
+            <div class="team-member">
+              <div class="member-img">
+                {% assign img_name = member.first_name | append: "_" | append: member.last_name | downcase | replace: "'", "" | replace: " ", "_" %}
+                <img src="/assets/img/team/{{ img_name }}.jpg" class="img-fluid" alt="{{ member.first_name }} {{ member.last_name }}">
+              </div>
+              <div class="member-info">
+                <div class="social">
+                  <a href="{{ member.linkedin }}" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h4>{{ member.first_name }} {{ member.last_name }}</h4>
+                <span>Founder</span>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Active Members by Year -->
+<section id="active-members" class="team section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Active Members</h2>
+    <p>Year-by-year contributions</p>
+  </div>
+
+  {% for year in all_years %}
+    <div class="container" data-aos="fade-up">
+      <h3 class="text-center mb-4">Academic Year {{ year }}</h3>
+      
+      {% comment %} Project Leads {% endcomment %}
+      {% assign year_project_leads = "" | split: "" %}
+      {% for member in site.data.team %}
+        {% assign membership = member.membership | where: "AY", year | first %}
+        {% if membership and membership.role contains "project-lead" %}
+          {% assign year_project_leads = year_project_leads | push: member %}
+        {% endif %}
+      {% endfor %}
+
+      {% if year_project_leads.size > 0 %}
+        <h4 class="text-center mt-4 mb-3">Project Leads</h4>
+        <div class="row gy-5">
+          {% for member in year_project_leads %}
+            <div class="col-xl-3 col-md-4 col-6 d-flex" data-aos="zoom-in">
+              <div class="team-member">
+                <div class="member-img">
+                  {% assign img_name = member.first_name | append: "_" | append: member.last_name | downcase | replace: "'", "" | replace: " ", "_" %}
+                  <img src="/assets/img/team/{{ img_name }}.jpg" class="img-fluid" alt="{{ member.first_name }} {{ member.last_name }}">
+                </div>
+                <div class="member-info">
+                  <div class="social">
+                    <a href="{{ member.linkedin }}" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                  <h4>{{ member.first_name }} {{ member.last_name }}</h4>
+                  <span>Project Lead</span>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% comment %} Active Members {% endcomment %}
+      {% assign year_active_members = "" | split: "" %}
+      {% for member in site.data.team %}
+        {% assign membership = member.membership | where: "AY", year | first %}
+        {% if membership and membership.role contains "active-member" %}
+          {% assign year_active_members = year_active_members | push: member %}
+        {% endif %}
+      {% endfor %}
+
+      {% if year_active_members.size > 0 %}
+        <h4 class="text-center mt-4 mb-3">Active Members</h4>
+        <div class="row gy-5">
+          {% for member in year_active_members %}
+            <div class="col-xl-3 col-md-4 col-6 d-flex" data-aos="zoom-in">
+              <div class="team-member">
+                <div class="member-img">
+                  {% assign img_name = member.first_name | append: "_" | append: member.last_name | downcase | replace: "'", "" | replace: " ", "_" %}
+                  <img src="/assets/img/team/{{ img_name }}.jpg" class="img-fluid" alt="{{ member.first_name }} {{ member.last_name }}">
+                </div>
+                <div class="member-info">
+                  <div class="social">
+                    <a href="{{ member.linkedin }}" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                  <h4>{{ member.first_name }} {{ member.last_name }}</h4>
+                  <span>Active Member</span>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% unless forloop.last %}
+        <hr class="my-5">
+      {% endunless %}
+    </div>
+  {% endfor %}
+</section>
